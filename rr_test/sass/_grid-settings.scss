@@ -8,14 +8,14 @@ $grid-columns: 12;
 $max-width: em(1200px);
 
 // Define your breakpoints
-$mobile-breakpoint-value: 480px;
-$tablet-breakpoint-value: 768px;
-$large-breakpoint-value: 1200px;
+$mobile: 480px;
+$tablet: 768px;
+$large: 1200px;
 // $xl-break-point-value: 3000;
 
-$mobile: new-breakpoint(max-width em($mobile-breakpoint-value - 1) 2);
-$tablet: new-breakpoint(min-width em($mobile-breakpoint-value) max-width em($tablet-breakpoint-value) 4);
-$large-screen: new-breakpoint(min-width em($large-breakpoint-value));
+// $mobile: new-breakpoint(max-width em($mobile-breakpoint-value - 1) 2);
+// $tablet: new-breakpoint(min-width em($mobile-breakpoint-value) max-width em($tablet-breakpoint-value) 4);
+// $large-screen: new-breakpoint(min-width em($large-breakpoint-value));
 // $xl-screen: new-breakpoint(max-width 3000px 12);
 
 // Visual Grid

@@ -8,7 +8,7 @@
  */
 ?>
 
-<aside id="secondary" class="widget-area" role="complementary">
+<div id="secondary" class="widget-area" role="complementary">
     <?php  if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar-global') ) :
          endif;
     ?>
@@ -16,4 +16,4 @@
     <?php if(function_exists('residential_one_properties_sidebar_content')) {
         residential_one_properties_sidebar_content();
     } ?>
-</aside><!-- #secondary -->
+</div><!-- #secondary -->

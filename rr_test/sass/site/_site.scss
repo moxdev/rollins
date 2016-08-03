@@ -1,5 +1,22 @@
 // @import "../layout/content-sidebar";
 // @import "../layout/sidebar-content";
+
+/*--------------------------------------------------------------
+## Custom Sidebar
+--------------------------------------------------------------*/
+#primary {
+    @include media($tablet) {
+        @include span-columns(8);
+    }
+}
+#secondary {
+    @include media($tablet) {
+        @include span-columns(4);
+
+        margin-top: 1.5em;
+    }
+}
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/

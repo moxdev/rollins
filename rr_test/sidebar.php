@@ -9,23 +9,11 @@
 ?>
 
 <aside id="secondary" class="widget-area" role="complementary">
-    <?php  if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar-1') ) :
+    <?php  if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar-global') ) :
          endif;
     ?>
 
-    <?php if ( is_page_template( 'page-amenities-page.php' ) ) {
-        if ( function_exists('get_field') ) {
-            $image = get_field( 'images' );
-            ?>
-            <div class="side-img-wrapper">
-                <ul>
-                    <li><img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" /></li>
-                    <li><img src="http://placehold.it/350x250" class="side-img"></li>
-                    <li><img src="http://placehold.it/350x250" class="side-img"></li>
-                    <li><img src="http://placehold.it/350x250" class="side-img"></li>
-                </ul>
-            </div>
-            <?php
-       } // func exists
-    } // End ?>
+    <?php if(function_exists('residential_one_properties_sidebar_content')) {
+        residential_one_properties_sidebar_content();
+    } ?>
 </aside><!-- #secondary -->

@@ -1,0 +1,33 @@
+#masthead {
+    width: 100%;
+    height: auto;
+    color: $red;
+    background-color: $white;
+    border-bottom: 2px solid $red;
+    .site-branding {
+        float: left;
+        width: 30%;
+        // padding: 1em 1em 0 1em;
+        #logo img {
+            // width: 150px;
+            height: auto;
+            // display: block;
+        }
+    }
+    #site-navigation {
+        width: 70%;
+        clear: right;
+        margin-top: 45px;
+        .menu-primary-container {
+            float: right;
+        }
+        ul li a {
+            font-size: 1.3em;
+            padding: 10px;
+            color: $blackness;
+        }
+        ul li.current_page_item a {
+            color: $red;
+        }
+    }
+}

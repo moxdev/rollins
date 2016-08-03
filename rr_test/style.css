@@ -1,0 +1,1201 @@
+/*!
+Theme Name: Rollins Ridge
+Theme URI: http://underscores.me/
+Author: Millennium Marketing Solutions
+Author URI: http://www.mm4solutions.com/
+Description: Shane Biggs WordPress test of Rollings Ridge Apartments
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: rr_test
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Rollins Ridge is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+    ## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+# Layout
+    ## Header
+    ## Footer
+    ## Content
+    ## Home Page
+    ## Photo Gallery Page
+    ## Amenities Page
+    ## Contact Page
+
+--------------------------------------------------------------*/
+/* line 4, sass/grid/_box-sizing.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 9, sass/grid/_box-sizing.scss */
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+/* line 12, sass/grid/_visual-grid.scss */
+body:before {
+  background-image: -webkit-linear-gradient(left, transparent 0, #d6d6d6 0, #d6d6d6 7.5630252101%, transparent 7.5630252101%, transparent 8.4033613445%, #d6d6d6 8.4033613445%, #d6d6d6 15.9663865546%, transparent 15.9663865546%, transparent 16.8067226891%, #d6d6d6 16.8067226891%, #d6d6d6 24.3697478992%, transparent 24.3697478992%, transparent 25.2100840336%, #d6d6d6 25.2100840336%, #d6d6d6 32.7731092437%, transparent 32.7731092437%, transparent 33.6134453782%, #d6d6d6 33.6134453782%, #d6d6d6 41.1764705882%, transparent 41.1764705882%, transparent 42.0168067227%, #d6d6d6 42.0168067227%, #d6d6d6 49.5798319328%, transparent 49.5798319328%, transparent 50.4201680672%, #d6d6d6 50.4201680672%, #d6d6d6 57.9831932773%, transparent 57.9831932773%, transparent 58.8235294118%, #d6d6d6 58.8235294118%, #d6d6d6 66.3865546218%, transparent 66.3865546218%, transparent 67.2268907563%, #d6d6d6 67.2268907563%, #d6d6d6 74.7899159664%, transparent 74.7899159664%, transparent 75.6302521008%, #d6d6d6 75.6302521008%, #d6d6d6 83.1932773109%, transparent 83.1932773109%, transparent 84.0336134454%, #d6d6d6 84.0336134454%, #d6d6d6 91.5966386555%, transparent 91.5966386555%, transparent 92.4369747899%, #d6d6d6 92.4369747899%, #d6d6d6 100%, transparent 100%);
+  background-image: -webkit-linear-gradient(right, transparent 0, #d6d6d6 0, #d6d6d6 7.5630252101%, transparent 7.5630252101%, transparent 8.4033613445%, #d6d6d6 8.4033613445%, #d6d6d6 15.9663865546%, transparent 15.9663865546%, transparent 16.8067226891%, #d6d6d6 16.8067226891%, #d6d6d6 24.3697478992%, transparent 24.3697478992%, transparent 25.2100840336%, #d6d6d6 25.2100840336%, #d6d6d6 32.7731092437%, transparent 32.7731092437%, transparent 33.6134453782%, #d6d6d6 33.6134453782%, #d6d6d6 41.1764705882%, transparent 41.1764705882%, transparent 42.0168067227%, #d6d6d6 42.0168067227%, #d6d6d6 49.5798319328%, transparent 49.5798319328%, transparent 50.4201680672%, #d6d6d6 50.4201680672%, #d6d6d6 57.9831932773%, transparent 57.9831932773%, transparent 58.8235294118%, #d6d6d6 58.8235294118%, #d6d6d6 66.3865546218%, transparent 66.3865546218%, transparent 67.2268907563%, #d6d6d6 67.2268907563%, #d6d6d6 74.7899159664%, transparent 74.7899159664%, transparent 75.6302521008%, #d6d6d6 75.6302521008%, #d6d6d6 83.1932773109%, transparent 83.1932773109%, transparent 84.0336134454%, #d6d6d6 84.0336134454%, #d6d6d6 91.5966386555%, transparent 91.5966386555%, transparent 92.4369747899%, #d6d6d6 92.4369747899%, #d6d6d6 100%, transparent 100%);
+  background-image: linear-gradient(to left, transparent 0, #d6d6d6 0, #d6d6d6 7.5630252101%, transparent 7.5630252101%, transparent 8.4033613445%, #d6d6d6 8.4033613445%, #d6d6d6 15.9663865546%, transparent 15.9663865546%, transparent 16.8067226891%, #d6d6d6 16.8067226891%, #d6d6d6 24.3697478992%, transparent 24.3697478992%, transparent 25.2100840336%, #d6d6d6 25.2100840336%, #d6d6d6 32.7731092437%, transparent 32.7731092437%, transparent 33.6134453782%, #d6d6d6 33.6134453782%, #d6d6d6 41.1764705882%, transparent 41.1764705882%, transparent 42.0168067227%, #d6d6d6 42.0168067227%, #d6d6d6 49.5798319328%, transparent 49.5798319328%, transparent 50.4201680672%, #d6d6d6 50.4201680672%, #d6d6d6 57.9831932773%, transparent 57.9831932773%, transparent 58.8235294118%, #d6d6d6 58.8235294118%, #d6d6d6 66.3865546218%, transparent 66.3865546218%, transparent 67.2268907563%, #d6d6d6 67.2268907563%, #d6d6d6 74.7899159664%, transparent 74.7899159664%, transparent 75.6302521008%, #d6d6d6 75.6302521008%, #d6d6d6 83.1932773109%, transparent 83.1932773109%, transparent 84.0336134454%, #d6d6d6 84.0336134454%, #d6d6d6 91.5966386555%, transparent 91.5966386555%, transparent 92.4369747899%, #d6d6d6 92.4369747899%, #d6d6d6 100%, transparent 100%);
+  content: "";
+  display: inline-block;
+  height: 100%;
+  left: 0;
+  margin: 0 auto;
+  max-width: 75em;
+  opacity: 0.2;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  z-index: -1;
+}
+@media screen and (max-width: 29.9375em) {
+  /* line 12, sass/grid/_visual-grid.scss */
+  body:before {
+    background-image: -webkit-linear-gradient(left, transparent 0, #d6d6d6 0, #d6d6d6 47.3684210526%, transparent 47.3684210526%, transparent 52.6315789474%, #d6d6d6 52.6315789474%, #d6d6d6 100%, transparent 100%);
+    background-image: -webkit-linear-gradient(right, transparent 0, #d6d6d6 0, #d6d6d6 47.3684210526%, transparent 47.3684210526%, transparent 52.6315789474%, #d6d6d6 52.6315789474%, #d6d6d6 100%, transparent 100%);
+    background-image: linear-gradient(to left, transparent 0, #d6d6d6 0, #d6d6d6 47.3684210526%, transparent 47.3684210526%, transparent 52.6315789474%, #d6d6d6 52.6315789474%, #d6d6d6 100%, transparent 100%);
+  }
+}
+@media screen and (min-width: 30em) and (max-width: 48em) {
+  /* line 12, sass/grid/_visual-grid.scss */
+  body:before {
+    background-image: -webkit-linear-gradient(left, transparent 0, #d6d6d6 0, #d6d6d6 23.0769230769%, transparent 23.0769230769%, transparent 25.641025641%, #d6d6d6 25.641025641%, #d6d6d6 48.7179487179%, transparent 48.7179487179%, transparent 51.2820512821%, #d6d6d6 51.2820512821%, #d6d6d6 74.358974359%, transparent 74.358974359%, transparent 76.9230769231%, #d6d6d6 76.9230769231%, #d6d6d6 100%, transparent 100%);
+    background-image: -webkit-linear-gradient(right, transparent 0, #d6d6d6 0, #d6d6d6 23.0769230769%, transparent 23.0769230769%, transparent 25.641025641%, #d6d6d6 25.641025641%, #d6d6d6 48.7179487179%, transparent 48.7179487179%, transparent 51.2820512821%, #d6d6d6 51.2820512821%, #d6d6d6 74.358974359%, transparent 74.358974359%, transparent 76.9230769231%, #d6d6d6 76.9230769231%, #d6d6d6 100%, transparent 100%);
+    background-image: linear-gradient(to left, transparent 0, #d6d6d6 0, #d6d6d6 23.0769230769%, transparent 23.0769230769%, transparent 25.641025641%, #d6d6d6 25.641025641%, #d6d6d6 48.7179487179%, transparent 48.7179487179%, transparent 51.2820512821%, #d6d6d6 51.2820512821%, #d6d6d6 74.358974359%, transparent 74.358974359%, transparent 76.9230769231%, #d6d6d6 76.9230769231%, #d6d6d6 100%, transparent 100%);
+  }
+}
+@media screen and (min-width: 75em) {
+  /* line 12, sass/grid/_visual-grid.scss */
+  body:before {
+    background-image: -webkit-linear-gradient(left, transparent 0, #d6d6d6 0, #d6d6d6 7.5630252101%, transparent 7.5630252101%, transparent 8.4033613445%, #d6d6d6 8.4033613445%, #d6d6d6 15.9663865546%, transparent 15.9663865546%, transparent 16.8067226891%, #d6d6d6 16.8067226891%, #d6d6d6 24.3697478992%, transparent 24.3697478992%, transparent 25.2100840336%, #d6d6d6 25.2100840336%, #d6d6d6 32.7731092437%, transparent 32.7731092437%, transparent 33.6134453782%, #d6d6d6 33.6134453782%, #d6d6d6 41.1764705882%, transparent 41.1764705882%, transparent 42.0168067227%, #d6d6d6 42.0168067227%, #d6d6d6 49.5798319328%, transparent 49.5798319328%, transparent 50.4201680672%, #d6d6d6 50.4201680672%, #d6d6d6 57.9831932773%, transparent 57.9831932773%, transparent 58.8235294118%, #d6d6d6 58.8235294118%, #d6d6d6 66.3865546218%, transparent 66.3865546218%, transparent 67.2268907563%, #d6d6d6 67.2268907563%, #d6d6d6 74.7899159664%, transparent 74.7899159664%, transparent 75.6302521008%, #d6d6d6 75.6302521008%, #d6d6d6 83.1932773109%, transparent 83.1932773109%, transparent 84.0336134454%, #d6d6d6 84.0336134454%, #d6d6d6 91.5966386555%, transparent 91.5966386555%, transparent 92.4369747899%, #d6d6d6 92.4369747899%, #d6d6d6 100%, transparent 100%);
+    background-image: -webkit-linear-gradient(right, transparent 0, #d6d6d6 0, #d6d6d6 7.5630252101%, transparent 7.5630252101%, transparent 8.4033613445%, #d6d6d6 8.4033613445%, #d6d6d6 15.9663865546%, transparent 15.9663865546%, transparent 16.8067226891%, #d6d6d6 16.8067226891%, #d6d6d6 24.3697478992%, transparent 24.3697478992%, transparent 25.2100840336%, #d6d6d6 25.2100840336%, #d6d6d6 32.7731092437%, transparent 32.7731092437%, transparent 33.6134453782%, #d6d6d6 33.6134453782%, #d6d6d6 41.1764705882%, transparent 41.1764705882%, transparent 42.0168067227%, #d6d6d6 42.0168067227%, #d6d6d6 49.5798319328%, transparent 49.5798319328%, transparent 50.4201680672%, #d6d6d6 50.4201680672%, #d6d6d6 57.9831932773%, transparent 57.9831932773%, transparent 58.8235294118%, #d6d6d6 58.8235294118%, #d6d6d6 66.3865546218%, transparent 66.3865546218%, transparent 67.2268907563%, #d6d6d6 67.2268907563%, #d6d6d6 74.7899159664%, transparent 74.7899159664%, transparent 75.6302521008%, #d6d6d6 75.6302521008%, #d6d6d6 83.1932773109%, transparent 83.1932773109%, transparent 84.0336134454%, #d6d6d6 84.0336134454%, #d6d6d6 91.5966386555%, transparent 91.5966386555%, transparent 92.4369747899%, #d6d6d6 92.4369747899%, #d6d6d6 100%, transparent 100%);
+    background-image: linear-gradient(to left, transparent 0, #d6d6d6 0, #d6d6d6 7.5630252101%, transparent 7.5630252101%, transparent 8.4033613445%, #d6d6d6 8.4033613445%, #d6d6d6 15.9663865546%, transparent 15.9663865546%, transparent 16.8067226891%, #d6d6d6 16.8067226891%, #d6d6d6 24.3697478992%, transparent 24.3697478992%, transparent 25.2100840336%, #d6d6d6 25.2100840336%, #d6d6d6 32.7731092437%, transparent 32.7731092437%, transparent 33.6134453782%, #d6d6d6 33.6134453782%, #d6d6d6 41.1764705882%, transparent 41.1764705882%, transparent 42.0168067227%, #d6d6d6 42.0168067227%, #d6d6d6 49.5798319328%, transparent 49.5798319328%, transparent 50.4201680672%, #d6d6d6 50.4201680672%, #d6d6d6 57.9831932773%, transparent 57.9831932773%, transparent 58.8235294118%, #d6d6d6 58.8235294118%, #d6d6d6 66.3865546218%, transparent 66.3865546218%, transparent 67.2268907563%, #d6d6d6 67.2268907563%, #d6d6d6 74.7899159664%, transparent 74.7899159664%, transparent 75.6302521008%, #d6d6d6 75.6302521008%, #d6d6d6 83.1932773109%, transparent 83.1932773109%, transparent 84.0336134454%, #d6d6d6 84.0336134454%, #d6d6d6 91.5966386555%, transparent 91.5966386555%, transparent 92.4369747899%, #d6d6d6 92.4369747899%, #d6d6d6 100%, transparent 100%);
+  }
+}
+
+@font-face {
+  font-family: 'cabin-regular';
+  src: url("fonts/cabin-regular-webfont.woff2") format("woff2"), url("fonts/cabin-regular-webfont") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'cabin-bold';
+  src: url("fonts/cabin-bold-webfont.woff2") format("woff2"), url("fonts/cabin-bold-webfont.woff2") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'timesregular';
+  src: url("fonts/times-roman-webfont.woff2") format("woff2"), url("fonts/times-roman-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+/* line 1, sass/_normalize.scss */
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 7, sass/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* line 12, sass/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* line 27, sass/_normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+/* line 35, sass/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 40, sass/_normalize.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* line 45, sass/_normalize.scss */
+a {
+  background-color: transparent;
+}
+
+/* line 49, sass/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* line 54, sass/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 58, sass/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 63, sass/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 67, sass/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 72, sass/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 77, sass/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 81, sass/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 89, sass/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 93, sass/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 97, sass/_normalize.scss */
+img {
+  border: 0;
+}
+
+/* line 101, sass/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 105, sass/_normalize.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/* line 109, sass/_normalize.scss */
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+/* line 114, sass/_normalize.scss */
+pre {
+  overflow: auto;
+}
+
+/* line 118, sass/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* line 126, sass/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+/* line 136, sass/_normalize.scss */
+button {
+  overflow: visible;
+}
+
+/* line 140, sass/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/* line 145, sass/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 153, sass/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/* line 158, sass/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 164, sass/_normalize.scss */
+input {
+  line-height: normal;
+}
+
+/* line 168, sass/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 174, sass/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* line 179, sass/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 184, sass/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* line 190, sass/_normalize.scss */
+legend {
+  border: 0;
+  padding: 0;
+}
+
+/* line 195, sass/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/* line 199, sass/_normalize.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* line 203, sass/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 208, sass/_normalize.scss */
+td,
+th {
+  padding: 0;
+}
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+/* line 1, sass/typography/_typography.scss */
+body,
+button,
+input,
+select,
+textarea {
+  color: #404040;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* line 1, sass/typography/_headings.scss */
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+}
+
+/* line 1, sass/typography/_copy.scss */
+p {
+  margin-bottom: 1.5em;
+}
+
+/* line 5, sass/typography/_copy.scss */
+dfn, cite, em, i {
+  font-style: italic;
+}
+
+/* line 9, sass/typography/_copy.scss */
+blockquote {
+  margin: 0 1.5em;
+}
+
+/* line 13, sass/typography/_copy.scss */
+address {
+  margin: 0 0 1.5em;
+}
+
+/* line 17, sass/typography/_copy.scss */
+pre {
+  background: #eee;
+  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1.6em;
+}
+
+/* line 28, sass/typography/_copy.scss */
+code, kbd, tt, var {
+  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-size: 15px;
+  font-size: 0.9375rem;
+}
+
+/* line 33, sass/typography/_copy.scss */
+abbr, acronym {
+  border-bottom: 1px dotted #666;
+  cursor: help;
+}
+
+/* line 38, sass/typography/_copy.scss */
+mark, ins {
+  background: #fff9c0;
+  text-decoration: none;
+}
+
+/* line 43, sass/typography/_copy.scss */
+big {
+  font-size: 125%;
+}
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+/* line 1, sass/elements/_elements.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 5, sass/elements/_elements.scss */
+*,
+*:before,
+*:after {
+  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+  box-sizing: inherit;
+}
+
+/* line 11, sass/elements/_elements.scss */
+body {
+  background: #fff;
+  /* Fallback for when there is no custom background color defined. */
+}
+
+/* line 15, sass/elements/_elements.scss */
+blockquote, q {
+  quotes: "" "";
+}
+/* line 18, sass/elements/_elements.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+}
+
+/* line 24, sass/elements/_elements.scss */
+hr {
+  background-color: #ccc;
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.5em;
+}
+
+/* line 1, sass/elements/_lists.scss */
+ul, ol {
+  margin: 0 0 1.5em 3em;
+}
+
+/* line 5, sass/elements/_lists.scss */
+ul {
+  list-style: disc;
+}
+
+/* line 9, sass/elements/_lists.scss */
+ol {
+  list-style: decimal;
+}
+
+/* line 13, sass/elements/_lists.scss */
+li > ul,
+li > ol {
+  margin-bottom: 0;
+  margin-left: 1.5em;
+}
+
+/* line 19, sass/elements/_lists.scss */
+dt {
+  font-weight: bold;
+}
+
+/* line 23, sass/elements/_lists.scss */
+dd {
+  margin: 0 1.5em 1.5em;
+}
+
+/* line 33, sass/elements/_elements.scss */
+img {
+  height: auto;
+  /* Make sure images are scaled correctly. */
+  max-width: 100%;
+  /* Adhere to container width. */
+}
+
+/* line 1, sass/elements/_tables.scss */
+table {
+  margin: 0 0 1.5em;
+  width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+/* line 1, sass/forms/_buttons.scss */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  border: 1px solid;
+  border-color: #ccc #ccc #bbb;
+  border-radius: 3px;
+  background: #e6e6e6;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 1;
+  padding: .6em 1em .4em;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+/* line 16, sass/forms/_buttons.scss */
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  border-color: #ccc #bbb #aaa;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
+}
+/* line 21, sass/forms/_buttons.scss */
+button:active, button:focus,
+input[type="button"]:active,
+input[type="button"]:focus,
+input[type="reset"]:active,
+input[type="reset"]:focus,
+input[type="submit"]:active,
+input[type="submit"]:focus {
+  border-color: #aaa #bbb #bbb;
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* line 1, sass/forms/_fields.scss */
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+  color: #666;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 3px;
+}
+/* line 22, sass/forms/_fields.scss */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+textarea:focus {
+  color: #111;
+}
+
+/* line 27, sass/forms/_fields.scss */
+select {
+  border: 1px solid #ccc;
+}
+
+/* line 31, sass/forms/_fields.scss */
+textarea {
+  width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+/* line 1, sass/navigation/_links.scss */
+a {
+  color: royalblue;
+}
+/* line 4, sass/navigation/_links.scss */
+a:visited {
+  color: purple;
+}
+/* line 7, sass/navigation/_links.scss */
+a:hover, a:focus, a:active {
+  color: midnightblue;
+}
+/* line 12, sass/navigation/_links.scss */
+a:focus {
+  outline: thin dotted;
+}
+/* line 15, sass/navigation/_links.scss */
+a:hover, a:active {
+  outline: 0;
+}
+
+/*--------------------------------------------------------------
+## Menus
+--------------------------------------------------------------*/
+/* line 1, sass/navigation/_menus.scss */
+.main-navigation {
+  clear: both;
+  display: block;
+  float: left;
+  width: 100%;
+}
+/* line 7, sass/navigation/_menus.scss */
+.main-navigation ul {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+/* line 13, sass/navigation/_menus.scss */
+.main-navigation ul ul {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  float: left;
+  position: absolute;
+  top: 1.5em;
+  left: -999em;
+  z-index: 99999;
+}
+/* line 21, sass/navigation/_menus.scss */
+.main-navigation ul ul ul {
+  left: -999em;
+  top: 0;
+}
+/* line 27, sass/navigation/_menus.scss */
+.main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
+  left: 100%;
+}
+/* line 33, sass/navigation/_menus.scss */
+.main-navigation ul ul a {
+  width: 200px;
+}
+/* line 46, sass/navigation/_menus.scss */
+.main-navigation ul li:hover > ul,
+.main-navigation ul li.focus > ul {
+  left: auto;
+}
+/* line 52, sass/navigation/_menus.scss */
+.main-navigation li {
+  float: left;
+  position: relative;
+}
+/* line 61, sass/navigation/_menus.scss */
+.main-navigation a {
+  display: block;
+  text-decoration: none;
+}
+
+/* Small menu. */
+/* line 74, sass/navigation/_menus.scss */
+.menu-toggle,
+.main-navigation.toggled ul {
+  display: block;
+}
+
+@media screen and (min-width: 37.5em) {
+  /* line 80, sass/navigation/_menus.scss */
+  .menu-toggle {
+    display: none;
+  }
+
+  /* line 83, sass/navigation/_menus.scss */
+  .main-navigation ul {
+    display: block;
+  }
+}
+/* line 92, sass/navigation/_menus.scss */
+.site-main .comment-navigation, .site-main
+.posts-navigation, .site-main
+.post-navigation {
+  margin: 0 0 1.5em;
+  overflow: hidden;
+}
+/* line 97, sass/navigation/_menus.scss */
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+  float: left;
+  width: 50%;
+}
+/* line 102, sass/navigation/_menus.scss */
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+  float: right;
+  text-align: right;
+  width: 50%;
+}
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+/* line 2, sass/modules/_accessibility.scss */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+/* line 9, sass/modules/_accessibility.scss */
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */
+}
+
+/* Do not show the outline on the skip link target. */
+/* line 30, sass/modules/_accessibility.scss */
+#content[tabindex="-1"]:focus {
+  outline: 0;
+}
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+/* line 1, sass/modules/_alignments.scss */
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5em;
+}
+
+/* line 7, sass/modules/_alignments.scss */
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5em;
+}
+
+/* line 13, sass/modules/_alignments.scss */
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+/* line 1, sass/modules/_clearings.scss */
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+  content: "";
+  display: table;
+  table-layout: fixed;
+}
+
+/* line 16, sass/modules/_clearings.scss */
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+  clear: both;
+}
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+/* line 1, sass/site/secondary/_widgets.scss */
+.widget {
+  margin: 0 0 1.5em;
+  /* Make sure select elements fit in widgets. */
+}
+/* line 5, sass/site/secondary/_widgets.scss */
+.widget select {
+  max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+/* line 1, sass/site/primary/_posts-and-pages.scss */
+.sticky {
+  display: block;
+}
+
+/* line 5, sass/site/primary/_posts-and-pages.scss */
+.hentry {
+  margin: 0 0 1.5em;
+}
+
+/* line 9, sass/site/primary/_posts-and-pages.scss */
+.byline,
+.updated:not(.published) {
+  display: none;
+}
+
+/* line 14, sass/site/primary/_posts-and-pages.scss */
+.single .byline,
+.group-blog .byline {
+  display: inline;
+}
+
+/* line 19, sass/site/primary/_posts-and-pages.scss */
+.page-content,
+.entry-content,
+.entry-summary {
+  margin: 1.5em 0 0;
+}
+
+/* line 25, sass/site/primary/_posts-and-pages.scss */
+.page-links {
+  clear: both;
+  margin: 0 0 1.5em;
+}
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+/* line 1, sass/site/primary/_comments.scss */
+.comment-content a {
+  word-wrap: break-word;
+}
+
+/* line 4, sass/site/primary/_comments.scss */
+.bypostauthor {
+  display: block;
+}
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+/* line 2, sass/modules/_infinite-scroll.scss */
+.infinite-scroll .posts-navigation,
+.infinite-scroll.neverending .site-footer {
+  /* Theme Footer (when set to scrolling) */
+  display: none;
+}
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+/* line 8, sass/modules/_infinite-scroll.scss */
+.infinity-end.neverending .site-footer {
+  display: block;
+}
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+/* line 1, sass/media/_media.scss */
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+/* line 11, sass/media/_media.scss */
+embed,
+iframe,
+object {
+  max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+/* line 1, sass/media/_captions.scss */
+.wp-caption {
+  margin-bottom: 1.5em;
+  max-width: 100%;
+}
+/* line 5, sass/media/_captions.scss */
+.wp-caption img[class*="wp-image-"] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 9, sass/media/_captions.scss */
+.wp-caption .wp-caption-text {
+  margin: 0.8075em 0;
+}
+
+/* line 14, sass/media/_captions.scss */
+.wp-caption-text {
+  text-align: center;
+}
+
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
+/* line 1, sass/media/_galleries.scss */
+.gallery {
+  margin-bottom: 1.5em;
+}
+
+/* line 5, sass/media/_galleries.scss */
+.gallery-item {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  width: 100%;
+}
+/* line 11, sass/media/_galleries.scss */
+.gallery-columns-2 .gallery-item {
+  max-width: 50%;
+}
+/* line 15, sass/media/_galleries.scss */
+.gallery-columns-3 .gallery-item {
+  max-width: 33.33%;
+}
+/* line 19, sass/media/_galleries.scss */
+.gallery-columns-4 .gallery-item {
+  max-width: 25%;
+}
+/* line 23, sass/media/_galleries.scss */
+.gallery-columns-5 .gallery-item {
+  max-width: 20%;
+}
+/* line 27, sass/media/_galleries.scss */
+.gallery-columns-6 .gallery-item {
+  max-width: 16.66%;
+}
+/* line 31, sass/media/_galleries.scss */
+.gallery-columns-7 .gallery-item {
+  max-width: 14.28%;
+}
+/* line 35, sass/media/_galleries.scss */
+.gallery-columns-8 .gallery-item {
+  max-width: 12.5%;
+}
+/* line 39, sass/media/_galleries.scss */
+.gallery-columns-9 .gallery-item {
+  max-width: 11.11%;
+}
+
+/* line 44, sass/media/_galleries.scss */
+.gallery-caption {
+  display: block;
+}
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Header
+--------------------------------------------------------------*/
+/* line 1, sass/page-templates/_header.scss */
+#masthead {
+  width: 100%;
+  height: auto;
+  color: #8F221D;
+  background-color: #ffffff;
+  border-bottom: 2px solid #8F221D;
+}
+/* line 7, sass/page-templates/_header.scss */
+#masthead .site-branding {
+  float: left;
+  width: 30%;
+}
+/* line 11, sass/page-templates/_header.scss */
+#masthead .site-branding #logo img {
+  height: auto;
+}
+/* line 17, sass/page-templates/_header.scss */
+#masthead #site-navigation {
+  width: 70%;
+  clear: right;
+  margin-top: 45px;
+}
+/* line 21, sass/page-templates/_header.scss */
+#masthead #site-navigation .menu-primary-container {
+  float: right;
+}
+/* line 24, sass/page-templates/_header.scss */
+#masthead #site-navigation ul li a {
+  font-size: 1.3em;
+  padding: 10px;
+  color: #7f7f7f;
+}
+/* line 29, sass/page-templates/_header.scss */
+#masthead #site-navigation ul li.current_page_item a {
+  color: #8F221D;
+}
+
+/*--------------------------------------------------------------
+## Footer
+--------------------------------------------------------------*/
+/* line 2, sass/page-templates/_footer.scss */
+.site-footer {
+  height: auto;
+  background-color: #8F221D;
+  color: #ffffff;
+  padding: 1.25em 1.875em 3.125em 1.875em;
+  font-size: .7em;
+  display: block;
+}
+/* line 9, sass/page-templates/_footer.scss */
+.site-footer .footer-address-section {
+  width: 40%;
+  text-align: left;
+  float: left;
+}
+/* line 13, sass/page-templates/_footer.scss */
+.site-footer .footer-address-section .footer-phone {
+  font-size: 1.5em;
+}
+/* line 17, sass/page-templates/_footer.scss */
+.site-footer .footer-equal-housing {
+  width: 55%;
+  text-align: right;
+  float: right;
+}
+
+/*--------------------------------------------------------------
+## Content
+--------------------------------------------------------------*/
+/* line 2, sass/page-templates/_content.scss */
+#content {
+  content: "";
+  display: table;
+  table-layout: fixed;
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*--------------------------------------------------------------
+## Home Page
+--------------------------------------------------------------*/
+/* line 3, sass/page-templates/_homepage.scss */
+.page-template-front-page #slider {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 10, sass/page-templates/_homepage.scss */
+.page-template-front-page #slider .flex-control-nav {
+  bottom: 10%;
+  z-index: 999;
+}
+/* line 14, sass/page-templates/_homepage.scss */
+.page-template-front-page #slider .flex-control-nav li a {
+  width: 35px;
+  height: 35px;
+  display: block;
+  border: 2px solid #ffffff;
+  background: #8F221D;
+  cursor: pointer;
+  text-indent: -9999px;
+  border-radius: 0;
+}
+/* line 26, sass/page-templates/_homepage.scss */
+.page-template-front-page #slider .flex-control-nav .flex-active {
+  background: #daba75;
+}
+/* line 33, sass/page-templates/_homepage.scss */
+.page-template-front-page .entry-title {
+  display: none;
+}
+/* line 36, sass/page-templates/_homepage.scss */
+.page-template-front-page .entry-content {
+  text-align: center;
+}
+/* line 38, sass/page-templates/_homepage.scss */
+.page-template-front-page .entry-content h1 {
+  font-family: "timesregular", sans-serif;
+  font-weight: 400;
+  color: #8F221D;
+}
+/* line 43, sass/page-templates/_homepage.scss */
+.page-template-front-page .entry-content p {
+  font-family: "cabin-regular", sans-serif;
+  font-weight: 400;
+}
+/* line 49, sass/page-templates/_homepage.scss */
+.page-template-front-page .highlight-box {
+  float: left;
+  width: 31%;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+/*--------------------------------------------------------------
+## Photo Gallery Page
+--------------------------------------------------------------*/
+/* line 4, sass/page-templates/_photo-gallery.scss */
+.page-template-page-photo-gallery-page .site-main {
+  text-align: center;
+}
+/* line 7, sass/page-templates/_photo-gallery.scss */
+.page-template-page-photo-gallery-page .site-main .entry-title {
+  font-family: "timesregular", sans-serif;
+  font-weight: 400;
+  color: #8F221D;
+}
+/* line 12, sass/page-templates/_photo-gallery.scss */
+.page-template-page-photo-gallery-page .site-main .entry-content {
+  font-family: "cabin-regular", sans-serif;
+  font-weight: 400;
+}
+
+/*--------------------------------------------------------------
+## Amenities Page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Contact Page
+--------------------------------------------------------------*/
+
+/*# sourceMappingURL=style.css.map */

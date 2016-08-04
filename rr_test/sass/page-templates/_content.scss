@@ -1,4 +1,18 @@
 // _content.scss
 #content {
     @include outer-container();
+
+    .site-main {
+        text-align: center;
+
+        .entry-title {
+            font-family: $font-times-regular;
+            font-weight: 400;
+            color: $red;
+        }
+        .entry-content {
+            font-family: $font-cabin-regular;
+            font-weight: 400;
+        }
+    }
 }

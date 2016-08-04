@@ -17,11 +17,24 @@ function rr_test_photo_gallery() {
                 if( $images ): ?>
                 <div id="slider" class="flexslider">
                     <ul class="slides">
+
                         <?php foreach( $images as $image ): ?>
-                        <li data-thumb="<?php echo $image['sizes']['thumbnail']; ?>">
-                            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-                        </li>
+                          <li class="gallery-slider-list-item">
+                              <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                          </li>
                         <?php endforeach; ?>
+
+                    </ul>
+                </div>
+                <div id="thumbnail-slider" class="flexslider">
+                    <ul class="slides">
+
+                        <?php foreach( $images as $image ): ?>
+                          <li class="gallery-thumbnail-list-item">
+                              <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                          </li>
+                        <?php endforeach; ?>
+
                     </ul>
                 </div>
         <?php endif;

@@ -1092,6 +1092,21 @@ object {
   margin-left: auto;
   margin-right: auto;
 }
+/* line 5, sass/page-templates/_content.scss */
+#content .site-main {
+  text-align: center;
+}
+/* line 8, sass/page-templates/_content.scss */
+#content .site-main .entry-title {
+  font-family: "timesregular", sans-serif;
+  font-weight: 400;
+  color: #8F221D;
+}
+/* line 13, sass/page-templates/_content.scss */
+#content .site-main .entry-content {
+  font-family: "cabin-regular", sans-serif;
+  font-weight: 400;
+}
 
 /*--------------------------------------------------------------
 ## Home Page
@@ -1153,19 +1168,9 @@ object {
 ## Photo Gallery Page
 --------------------------------------------------------------*/
 /* line 4, sass/page-templates/_photo-gallery.scss */
-.page-template-page-photo-gallery-page .site-main {
-  text-align: center;
-}
-/* line 7, sass/page-templates/_photo-gallery.scss */
-.page-template-page-photo-gallery-page .site-main .entry-title {
-  font-family: "timesregular", sans-serif;
-  font-weight: 400;
-  color: #8F221D;
-}
-/* line 12, sass/page-templates/_photo-gallery.scss */
-.page-template-page-photo-gallery-page .site-main .entry-content {
-  font-family: "cabin-regular", sans-serif;
-  font-weight: 400;
+.page-template-page-photo-gallery-page #slider, .page-template-page-photo-gallery-page #thumbnail-slider {
+  margin: 0;
+  border: none;
 }
 
 /*--------------------------------------------------------------

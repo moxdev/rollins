@@ -154,17 +154,6 @@ function rr_test_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'rr_test_scripts' );
 
-/*
-* Implement Custom Flexslider in header.php
- */
-function rr_test_load_flexslider() {
-	if ( is_page_template( 'front-page.php' ) && function_exists( rr_test_front_page_carousel() ) ) {
- 		rr_test_front_page_carousel();
- 	}elseif ( is_page_template( 'page-photo-gallery-page.php' ) && function_exists( rr_test_photo_gallery() ) ) {
- 		rr_test_photo_gallery();
- 	}
-}
-
 /**
  * Implement the Custom Header feature.
  */
@@ -211,35 +200,9 @@ require get_template_directory() . '/inc/footer-colophon.php';
 require get_template_directory() . '/inc/photo-gallery-flexslider.php';
 
 /**
- * Register widget area.
- *
- * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
- */
-function residential_one_properties_widgets_init() {
-	register_sidebar( array(
-		'name'          => __( 'Global Sidebar', 'residential-one-properties' ),
-		'id'            => 'sidebar-global',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h3 class="widget-title">',
-		'after_title'   => '</h3>',
-	) );
-
-	register_sidebar( array(
-		'name'          => __( 'Blog Sidebar', 'residential-one-properties' ),
-		'id'            => 'sidebar-blog',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h3 class="widget-title">',
-		'after_title'   => '</h3>',
-	) );
-}
-add_action( 'widgets_init', 'residential_one_properties_widgets_init' );
-
-/**
  * Sidebar Content
  */
-function residential_one_properties_sidebar_content() {
+function rr_test_sidebar_content() {
 	if( function_exists( 'get_field' ) ) {
 		$sidebar_content = get_field('custom_sidebar_content');
 			if($sidebar_content) { ?>
@@ -248,4 +211,15 @@ function residential_one_properties_sidebar_content() {
 				</aside>
 		<?php }
 	}
+}
+
+/*
+* Implement Custom Flexslider in header.php
+ */
+function rr_test_load_flexslider() {
+	if ( is_page_template( 'front-page.php' ) && function_exists( rr_test_front_page_carousel() ) ) {
+ 		rr_test_front_page_carousel();
+ 	}elseif ( is_page_template( 'page-photo-gallery-page.php' ) && function_exists( rr_test_photo_gallery() ) ) {
+ 		rr_test_photo_gallery();
+ 	}
 }

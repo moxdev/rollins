@@ -9,11 +9,9 @@
 ?>
 
 <div id="secondary" class="widget-area" role="complementary">
-    <?php  if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar-global') ) :
-         endif;
-    ?>
 
-    <?php if(function_exists('residential_one_properties_sidebar_content')) {
-        residential_one_properties_sidebar_content();
+    <?php if(function_exists('rr_test_sidebar_content')) {
+        rr_test_sidebar_content();
     } ?>
+
 </div><!-- #secondary -->

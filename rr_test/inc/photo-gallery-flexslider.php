@@ -11,21 +11,20 @@
  */
 
 function rr_test_photo_gallery() {
-    if ( is_page_template( 'page-photo-gallery-page.php' ) ) {
+    if( is_page_template( 'page-photo-gallery-page.php' ) ) {
         if( function_exists( 'get_field') ) {
             $images = get_field( 'images' );
                 if( $images ): ?>
                 <div id="slider" class="flexslider">
                     <ul class="slides">
-
-                        <li data-thumb="<?php echo $image['url']; ?>">
+                        <?php foreach( $images as $image ): ?>
+                        <li data-thumb="<?php echo $image['sizes']['thumbnail']; ?>">
                             <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-                            <p><?php echo $image['caption']; ?></p>
                         </li>
-
+                        <?php endforeach; ?>
                     </ul>
                 </div>
-                <?php endif;
+        <?php endif;
         }
     }
 }

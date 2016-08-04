@@ -1,0 +1,14 @@
+.page-template-page-amenities-page {
+    #primary {
+        @include media($tablet) {
+            @include span-columns(8);
+            padding: 0 20px;
+        }
+    }
+    #secondary {
+        @include media($tablet) {
+            @include span-columns(4);
+                margin-top: 1em;
+        }
+    }
+}

@@ -5,10 +5,9 @@
   $(window).load(function() {
     // front-page slider
     $('.flexslider').flexslider({
-        controlNav: 'thumbnail',
-        directionNav: true,
-        prevText: "Previous",
-        nextText: "Next"
+        animation: "fade",
+        controlNav: "thumbnails",
+        maxItems: 12
     });
   });
 })(jQuery);

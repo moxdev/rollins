@@ -841,38 +841,6 @@ a:hover, a:active {
 # Content
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
-## Custom Sidebar
---------------------------------------------------------------*/
-@media screen and (min-width: 768px) {
-  /* line 7, sass/site/_site.scss */
-  #primary {
-    float: left;
-    display: block;
-    margin-right: 0.8403361345%;
-    width: 66.3865546218%;
-  }
-  /* line 89, sass/grid/_span-columns.scss */
-  #primary:last-child {
-    margin-right: 0;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  /* line 12, sass/site/_site.scss */
-  #secondary {
-    float: left;
-    display: block;
-    margin-right: 0.8403361345%;
-    width: 32.7731092437%;
-    margin-top: 1.5em;
-  }
-  /* line 89, sass/grid/_span-columns.scss */
-  #secondary:last-child {
-    margin-right: 0;
-  }
-}
-
-/*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
 /* line 1, sass/site/primary/_posts-and-pages.scss */
@@ -1050,34 +1018,35 @@ object {
   height: auto;
   color: #8F221D;
   background-color: #ffffff;
+  padding: 10px 20px;
   border-bottom: 2px solid #8F221D;
 }
-/* line 7, sass/page-templates/_header.scss */
+/* line 8, sass/page-templates/_header.scss */
 #masthead .site-branding {
   float: left;
   width: 30%;
 }
-/* line 11, sass/page-templates/_header.scss */
+/* line 12, sass/page-templates/_header.scss */
 #masthead .site-branding #logo img {
   height: auto;
 }
-/* line 17, sass/page-templates/_header.scss */
+/* line 18, sass/page-templates/_header.scss */
 #masthead #site-navigation {
   width: 70%;
   clear: right;
   margin-top: 45px;
 }
-/* line 21, sass/page-templates/_header.scss */
+/* line 22, sass/page-templates/_header.scss */
 #masthead #site-navigation .menu-primary-container {
   float: right;
 }
-/* line 24, sass/page-templates/_header.scss */
+/* line 25, sass/page-templates/_header.scss */
 #masthead #site-navigation ul li a {
   font-size: 1.3em;
   padding: 10px;
   color: #7f7f7f;
 }
-/* line 29, sass/page-templates/_header.scss */
+/* line 30, sass/page-templates/_header.scss */
 #masthead #site-navigation ul li.current_page_item a {
   color: #8F221D;
 }
@@ -1202,6 +1171,35 @@ object {
 /*--------------------------------------------------------------
 ## Amenities Page
 --------------------------------------------------------------*/
+@media screen and (min-width: 768px) {
+  /* line 2, sass/page-templates/_amenities-page.scss */
+  .page-template-page-amenities-page #primary {
+    float: left;
+    display: block;
+    margin-right: 0.8403361345%;
+    width: 66.3865546218%;
+    padding: 0 20px;
+  }
+  /* line 89, sass/grid/_span-columns.scss */
+  .page-template-page-amenities-page #primary:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 8, sass/page-templates/_amenities-page.scss */
+  .page-template-page-amenities-page #secondary {
+    float: left;
+    display: block;
+    margin-right: 0.8403361345%;
+    width: 32.7731092437%;
+    margin-top: 1em;
+  }
+  /* line 89, sass/grid/_span-columns.scss */
+  .page-template-page-amenities-page #secondary:last-child {
+    margin-right: 0;
+  }
+}
+
 /*--------------------------------------------------------------
 ## Contact Page
 --------------------------------------------------------------*/

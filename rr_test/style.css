@@ -1020,33 +1020,35 @@ object {
   background-color: #ffffff;
   padding: 10px 20px;
   border-bottom: 2px solid #8F221D;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
-/* line 8, sass/page-templates/_header.scss */
-#masthead .site-branding {
-  float: left;
-  width: 30%;
+/* line 11, sass/page-templates/_header.scss */
+#masthead .flex-item {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
-/* line 12, sass/page-templates/_header.scss */
-#masthead .site-branding #logo img {
-  height: auto;
+/* line 20, sass/page-templates/_header.scss */
+#masthead .main-navigation {
+  -webkit-box-flex: 2;
+  -webkit-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
 }
-/* line 18, sass/page-templates/_header.scss */
-#masthead #site-navigation {
-  width: 70%;
-  clear: right;
-  margin-top: 45px;
-}
-/* line 22, sass/page-templates/_header.scss */
-#masthead #site-navigation .menu-primary-container {
-  float: right;
-}
-/* line 25, sass/page-templates/_header.scss */
+/* line 26, sass/page-templates/_header.scss */
 #masthead #site-navigation ul li a {
   font-size: 1.3em;
   padding: 10px;
   color: #7f7f7f;
 }
-/* line 30, sass/page-templates/_header.scss */
+/* line 31, sass/page-templates/_header.scss */
 #masthead #site-navigation ul li.current_page_item a {
   color: #8F221D;
 }

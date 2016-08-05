@@ -5,23 +5,24 @@
     background-color: $white;
     padding: 10px 20px;
     border-bottom: 2px solid $red;
+    display: flex;
+    // align-items: baseline;
+
+    .flex-item {
+        flex: 1;
+    }
     .site-branding {
-        float: left;
-        width: 30%;
-        // padding: 1em 1em 0 1em;
-        #logo img {
-            // width: 150px;
-            height: auto;
-            // display: block;
-        }
+
+    }
+    .masthead-tel {
+
+    }
+    .main-navigation {
+        flex: 2;
+        align-self: flex-end;
+
     }
     #site-navigation {
-        width: 70%;
-        clear: right;
-        margin-top: 45px;
-        .menu-primary-container {
-            float: right;
-        }
         ul li a {
             font-size: 1.3em;
             padding: 10px;

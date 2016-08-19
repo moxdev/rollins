@@ -80,20 +80,20 @@ body:before {
 }
 
 @font-face {
-  font-family: 'cabin-regular';
-  src: url("fonts/cabin-regular-webfont.woff2") format("woff2"), url("fonts/cabin-regular-webfont") format("woff");
+  font-family: 'TimesNewRomanPSMT';
+  src: url("TimesNewRomanPSMT.eot?#iefix") format("embedded-opentype"), url("TimesNewRomanPSMT.woff") format("woff"), url("TimesNewRomanPSMT.ttf") format("truetype"), url("TimesNewRomanPSMT.svg#TimesNewRomanPSMT") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'cabin-bold';
-  src: url("fonts/cabin-bold-webfont.woff2") format("woff2"), url("fonts/cabin-bold-webfont.woff2") format("woff");
-  font-weight: bold;
+  font-family: 'Cabin-Bold';
+  src: url("Cabin-Bold.eot?#iefix") format("embedded-opentype"), url("Cabin-Bold.otf") format("opentype"), url("Cabin-Bold.woff") format("woff"), url("Cabin-Bold.ttf") format("truetype"), url("Cabin-Bold.svg#Cabin-Bold") format("svg");
+  font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'timesregular';
-  src: url("fonts/times-roman-webfont.woff2") format("woff2"), url("fonts/times-roman-webfont.woff") format("woff");
+  font-family: 'Cabin-Regular';
+  src: url("Cabin-Regular.eot?#iefix") format("embedded-opentype"), url("Cabin-Regular.otf") format("opentype"), url("Cabin-Regular.woff") format("woff"), url("Cabin-Regular.ttf") format("truetype"), url("Cabin-Regular.svg#Cabin-Regular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -360,7 +360,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "Cabin-Regular";
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
@@ -406,7 +406,7 @@ pre {
 
 /* line 28, sass/typography/_copy.scss */
 code, kbd, tt, var {
-  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-family: "Cabin-Regular";
   font-size: 15px;
   font-size: 0.9375rem;
 }
@@ -694,7 +694,7 @@ a:hover, a:active {
   display: block;
 }
 
-@media screen and (min-width: 37.5em) {
+@media (min-width: 1200px) {
   /* line 80, sass/navigation/_menus.scss */
   .menu-toggle {
     display: none;
@@ -1098,13 +1098,13 @@ object {
 }
 /* line 8, sass/page-templates/_content.scss */
 #content .site-main .entry-title {
-  font-family: "timesregular", sans-serif;
+  font-family: "TimesNewRomanPSMT";
   font-weight: 400;
   color: #8F221D;
 }
 /* line 13, sass/page-templates/_content.scss */
 #content .site-main .entry-content {
-  font-family: "cabin-regular", sans-serif;
+  font-family: "Cabin-Regular";
   font-weight: 400;
 }
 
@@ -1147,13 +1147,13 @@ object {
 }
 /* line 38, sass/page-templates/_homepage.scss */
 .page-template-front-page .entry-content h1 {
-  font-family: "timesregular", sans-serif;
+  font-family: "TimesNewRomanPSMT";
   font-weight: 400;
   color: #8F221D;
 }
 /* line 43, sass/page-templates/_homepage.scss */
 .page-template-front-page .entry-content p {
-  font-family: "cabin-regular", sans-serif;
+  font-family: "Cabin-Regular";
   font-weight: 400;
 }
 /* line 49, sass/page-templates/_homepage.scss */

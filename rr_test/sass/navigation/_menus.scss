@@ -48,7 +48,7 @@
 			left: auto;
 		}
 	}
-	
+
 	li {
 		float: left;
 		position: relative;
@@ -57,7 +57,7 @@
 		&.focus > a {
 		}
 	}
-	
+
 	a {
 		display: block;
 		text-decoration: none;
@@ -76,7 +76,7 @@
 	display: block;
 }
 
-@media screen and (min-width: 37.5em) {
+@include respond-to(desktop) {
 	.menu-toggle {
 		display: none;
 	}

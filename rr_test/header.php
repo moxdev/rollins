@@ -25,18 +25,26 @@
 	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'rr_test' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
-			<div class="wrapper">
-
+		<div class="flex-wrapper">
+			<div class="site-branding flex-item">
 				<a id="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.png" alt="Rollins Ridge Apartments logo"></a>
+			</div><!-- .site-branding .flex-item -->
 
-			</div><!-- .wrapper -->
-		</div><!-- .site-branding -->
+			<div class="phone-wrapper">
+				<?php $phone = get_theme_mod('setting_phone');
+				    if ($phone): ?>
+				        <div class="masthead-tel flex-item">
+				            <a id="tel-link" href="tel:<?php echo $phone; ?>">Call and Schedule Your Tour! &nbsp;<span><?php echo $phone; ?></span></a>
+				        </div><!-- .masthead-tel .flex-item -->
+				    <?php endif;
+				?>
+				<nav id="site-navigation" class="main-navigation flex-item" role="navigation">
+					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'rr_test' ); ?></button>
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'rr_test' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-		</nav><!-- #site-navigation -->
+					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+				</nav><!-- #site-navigation flex-item-->
+			</div><!-- phone-wrapper flex-item -->
+		</div><!-- .flex-wrapper-->
 	</header><!-- #masthead -->
 
 	<?php if ( function_exists( 'rr_test_load_flexslider' ) ) {

@@ -1022,93 +1022,53 @@ object {
 #masthead:after {
   content: '';
   display: block;
-  height: 1px;
+  height: 2px;
   background-color: #8F221D;
 }
-/* line 13, sass/page-templates/_header.scss */
-#masthead .wrapper {
-  padding-bottom: 20px;
+/* line 12, sass/page-templates/_header.scss */
+#masthead .flex-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /* line 17, sass/page-templates/_header.scss */
-#masthead .site-branding {
+#masthead .flex-wrapper .flex-item {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+/* line 20, sass/page-templates/_header.scss */
+#masthead .flex-wrapper .site-branding {
   width: 55%;
   max-width: 225px;
 }
-/* line 21, sass/page-templates/_header.scss */
-#masthead .site-branding .custom-logo {
+/* line 24, sass/page-templates/_header.scss */
+#masthead .flex-wrapper .site-branding .custom-logo {
   display: block;
 }
-/* line 25, sass/page-templates/_header.scss */
-#masthead .site-branding .custom-logo-link {
+/* line 28, sass/page-templates/_header.scss */
+#masthead .flex-wrapper .site-branding .custom-logo-link {
   display: block;
   padding-bottom: 30px;
 }
-/* line 31, sass/page-templates/_header.scss */
-#masthead .masthead-tel {
-  float: right;
+/* line 34, sass/page-templates/_header.scss */
+#masthead .flex-wrapper .phone-wrapper .masthead-tel {
   font-family: "Cabin-Regular";
   font-size: .875em;
   color: #8F221D;
-  padding-bottom: 10px;
-  padding-top: 3.6em;
 }
 /* line 39, sass/page-templates/_header.scss */
-#masthead .masthead-tel span {
+#masthead .flex-wrapper .phone-wrapper .masthead-tel span {
   font-family: "Cabin-Regular";
-  display: none;
-}
-/* line 45, sass/page-templates/_header.scss */
-#masthead .flex {
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: -webkit-box;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-          flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -ms-flex-pack: justify;
-  -webkit-align-content: space-around;
-      -ms-flex-line-pack: distribute;
-          align-content: space-around;
-  -ms-flex-align: baseline;
-  -webkit-box-align: baseline;
-  -webkit-align-items: baseline;
-          align-items: baseline;
-}
-/* line 60, sass/page-templates/_header.scss */
-#masthead .flex .flex-item {
-  -ms-flex: 1 1 auto;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
-          flex: 1 1 auto;
-}
-@media (min-width: 1690px) {
-  /* line 1, sass/page-templates/_header.scss */
-  #masthead {
-    padding-top: 25px;
-  }
-  /* line 87, sass/page-templates/_header.scss */
-  #masthead .site-branding {
-    padding-bottom: 5px;
-    max-width: 300px;
-  }
-  /* line 91, sass/page-templates/_header.scss */
-  #masthead .site-branding .custom-logo-link {
-    padding-bottom: 0;
-  }
-  /* line 95, sass/page-templates/_header.scss */
-  #masthead .flex-item {
-    position: relative;
-  }
-  /* line 98, sass/page-templates/_header.scss */
-  #masthead .flex-item .masthead-tel {
-    padding-top: 0;
-  }
 }
 
 /*--------------------------------------------------------------

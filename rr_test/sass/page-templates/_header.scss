@@ -1,34 +1,103 @@
 #masthead {
-    width: 100%;
-    height: auto;
-    color: $red;
-    background-color: $white;
-    padding: 10px 20px;
-    border-bottom: 2px solid $red;
+    background-color: #fff;
+    padding-top: 10px;
+    color: #000;
+
+    &:after {
+        content: '';
+        display: block;
+        height: 1px;
+        background-color: $red;
+    }
+
+    .wrapper {
+        padding-bottom: 20px;
+    }
+
     .site-branding {
-        float: left;
-        width: 30%;
-        // padding: 1em 1em 0 1em;
-        #logo img {
-            // width: 150px;
-            height: auto;
-            // display: block;
+        width: 55%;
+        max-width: 225px;
+
+        .custom-logo {
+            display: block;
+        }
+
+        .custom-logo-link {
+            display: block;
+            padding-bottom: 30px;
         }
     }
-    #site-navigation {
-        width: 70%;
-        clear: right;
-        margin-top: 45px;
-        .menu-primary-container {
-            float: right;
+
+    .masthead-tel {
+        float: right;
+        font-family:$font__main;
+        font-size: .875em;
+        color: $red;
+        padding-bottom: 10px;
+        padding-top: 3.6em;
+
+        span {
+            font-family: $font__main;
+            display: none;
         }
-        ul li a {
-            font-size: 1.3em;
-            padding: 10px;
-            color: $blackness;
+    }
+
+    .flex {
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display:flex;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -ms-flex-pack: justify;
+        align-content: space-around;
+        -ms-flex-align: baseline;
+        align-items:baseline;
+
+        .flex-item {
+            -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
         }
-        ul li.current_page_item a {
-            color: $red;
+    }
+
+    @include respond-to(x-small) {
+        .masthead-tel {
+            font-size: 1em;
+        }
+    }
+
+    @include respond-to(small) {
+        .site-branding {
+            max-width: 275px;
+        }
+
+        .masthead-tel {
+            span {
+                display: inline;
+            }
+        }
+    }
+
+    @include respond-to(large) {
+        padding-top: 25px;
+
+        .site-branding {
+            padding-bottom: 5px;
+            max-width: 300px;
+
+            .custom-logo-link {
+                padding-bottom: 0;
+            }
+        }
+        .flex-item {
+            position: relative;
+
+            .masthead-tel {
+                padding-top: 0;
+            }
         }
     }
 }

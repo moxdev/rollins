@@ -1014,41 +1014,101 @@ object {
 --------------------------------------------------------------*/
 /* line 1, sass/page-templates/_header.scss */
 #masthead {
-  width: 100%;
-  height: auto;
-  color: #8F221D;
-  background-color: #ffffff;
-  padding: 10px 20px;
-  border-bottom: 2px solid #8F221D;
+  background-color: #fff;
+  padding-top: 10px;
+  color: #000;
 }
-/* line 8, sass/page-templates/_header.scss */
+/* line 6, sass/page-templates/_header.scss */
+#masthead:after {
+  content: '';
+  display: block;
+  height: 1px;
+  background-color: #8F221D;
+}
+/* line 13, sass/page-templates/_header.scss */
+#masthead .wrapper {
+  padding-bottom: 20px;
+}
+/* line 17, sass/page-templates/_header.scss */
 #masthead .site-branding {
-  float: left;
-  width: 30%;
+  width: 55%;
+  max-width: 225px;
 }
-/* line 12, sass/page-templates/_header.scss */
-#masthead .site-branding #logo img {
-  height: auto;
-}
-/* line 18, sass/page-templates/_header.scss */
-#masthead #site-navigation {
-  width: 70%;
-  clear: right;
-  margin-top: 45px;
-}
-/* line 22, sass/page-templates/_header.scss */
-#masthead #site-navigation .menu-primary-container {
-  float: right;
+/* line 21, sass/page-templates/_header.scss */
+#masthead .site-branding .custom-logo {
+  display: block;
 }
 /* line 25, sass/page-templates/_header.scss */
-#masthead #site-navigation ul li a {
-  font-size: 1.3em;
-  padding: 10px;
-  color: #7f7f7f;
+#masthead .site-branding .custom-logo-link {
+  display: block;
+  padding-bottom: 30px;
 }
-/* line 30, sass/page-templates/_header.scss */
-#masthead #site-navigation ul li.current_page_item a {
+/* line 31, sass/page-templates/_header.scss */
+#masthead .masthead-tel {
+  float: right;
+  font-family: "Cabin-Regular";
+  font-size: .875em;
   color: #8F221D;
+  padding-bottom: 10px;
+  padding-top: 3.6em;
+}
+/* line 39, sass/page-templates/_header.scss */
+#masthead .masthead-tel span {
+  font-family: "Cabin-Regular";
+  display: none;
+}
+/* line 45, sass/page-templates/_header.scss */
+#masthead .flex {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -ms-flex-pack: justify;
+  -webkit-align-content: space-around;
+      -ms-flex-line-pack: distribute;
+          align-content: space-around;
+  -ms-flex-align: baseline;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+          align-items: baseline;
+}
+/* line 60, sass/page-templates/_header.scss */
+#masthead .flex .flex-item {
+  -ms-flex: 1 1 auto;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+@media (min-width: 1690px) {
+  /* line 1, sass/page-templates/_header.scss */
+  #masthead {
+    padding-top: 25px;
+  }
+  /* line 87, sass/page-templates/_header.scss */
+  #masthead .site-branding {
+    padding-bottom: 5px;
+    max-width: 300px;
+  }
+  /* line 91, sass/page-templates/_header.scss */
+  #masthead .site-branding .custom-logo-link {
+    padding-bottom: 0;
+  }
+  /* line 95, sass/page-templates/_header.scss */
+  #masthead .flex-item {
+    position: relative;
+  }
+  /* line 98, sass/page-templates/_header.scss */
+  #masthead .flex-item .masthead-tel {
+    padding-top: 0;
+  }
 }
 
 /*--------------------------------------------------------------

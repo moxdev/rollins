@@ -50,8 +50,7 @@
 	}
 
 	li {
-		float: left;
-		position: relative;
+		display: inline-block;
 
 		&:hover > a,
 		&.focus > a {
@@ -73,6 +72,10 @@
 
 /* Small menu. */
 .menu-toggle {
+	background-color: $red;
+	border: none;
+	border-radius: 0;
+	color: $white;
 
 }
 .main-navigation.toggled ul {

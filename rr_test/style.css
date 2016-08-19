@@ -60,40 +60,21 @@ html {
   box-sizing: inherit;
 }
 
-/* line 12, sass/grid/_visual-grid.scss */
-body:before {
-  background-image: -webkit-linear-gradient(left, transparent 0, #d6d6d6 0, #d6d6d6 7.5630252101%, transparent 7.5630252101%, transparent 8.4033613445%, #d6d6d6 8.4033613445%, #d6d6d6 15.9663865546%, transparent 15.9663865546%, transparent 16.8067226891%, #d6d6d6 16.8067226891%, #d6d6d6 24.3697478992%, transparent 24.3697478992%, transparent 25.2100840336%, #d6d6d6 25.2100840336%, #d6d6d6 32.7731092437%, transparent 32.7731092437%, transparent 33.6134453782%, #d6d6d6 33.6134453782%, #d6d6d6 41.1764705882%, transparent 41.1764705882%, transparent 42.0168067227%, #d6d6d6 42.0168067227%, #d6d6d6 49.5798319328%, transparent 49.5798319328%, transparent 50.4201680672%, #d6d6d6 50.4201680672%, #d6d6d6 57.9831932773%, transparent 57.9831932773%, transparent 58.8235294118%, #d6d6d6 58.8235294118%, #d6d6d6 66.3865546218%, transparent 66.3865546218%, transparent 67.2268907563%, #d6d6d6 67.2268907563%, #d6d6d6 74.7899159664%, transparent 74.7899159664%, transparent 75.6302521008%, #d6d6d6 75.6302521008%, #d6d6d6 83.1932773109%, transparent 83.1932773109%, transparent 84.0336134454%, #d6d6d6 84.0336134454%, #d6d6d6 91.5966386555%, transparent 91.5966386555%, transparent 92.4369747899%, #d6d6d6 92.4369747899%, #d6d6d6 100%, transparent 100%);
-  background-image: -webkit-linear-gradient(right, transparent 0, #d6d6d6 0, #d6d6d6 7.5630252101%, transparent 7.5630252101%, transparent 8.4033613445%, #d6d6d6 8.4033613445%, #d6d6d6 15.9663865546%, transparent 15.9663865546%, transparent 16.8067226891%, #d6d6d6 16.8067226891%, #d6d6d6 24.3697478992%, transparent 24.3697478992%, transparent 25.2100840336%, #d6d6d6 25.2100840336%, #d6d6d6 32.7731092437%, transparent 32.7731092437%, transparent 33.6134453782%, #d6d6d6 33.6134453782%, #d6d6d6 41.1764705882%, transparent 41.1764705882%, transparent 42.0168067227%, #d6d6d6 42.0168067227%, #d6d6d6 49.5798319328%, transparent 49.5798319328%, transparent 50.4201680672%, #d6d6d6 50.4201680672%, #d6d6d6 57.9831932773%, transparent 57.9831932773%, transparent 58.8235294118%, #d6d6d6 58.8235294118%, #d6d6d6 66.3865546218%, transparent 66.3865546218%, transparent 67.2268907563%, #d6d6d6 67.2268907563%, #d6d6d6 74.7899159664%, transparent 74.7899159664%, transparent 75.6302521008%, #d6d6d6 75.6302521008%, #d6d6d6 83.1932773109%, transparent 83.1932773109%, transparent 84.0336134454%, #d6d6d6 84.0336134454%, #d6d6d6 91.5966386555%, transparent 91.5966386555%, transparent 92.4369747899%, #d6d6d6 92.4369747899%, #d6d6d6 100%, transparent 100%);
-  background-image: linear-gradient(to left, transparent 0, #d6d6d6 0, #d6d6d6 7.5630252101%, transparent 7.5630252101%, transparent 8.4033613445%, #d6d6d6 8.4033613445%, #d6d6d6 15.9663865546%, transparent 15.9663865546%, transparent 16.8067226891%, #d6d6d6 16.8067226891%, #d6d6d6 24.3697478992%, transparent 24.3697478992%, transparent 25.2100840336%, #d6d6d6 25.2100840336%, #d6d6d6 32.7731092437%, transparent 32.7731092437%, transparent 33.6134453782%, #d6d6d6 33.6134453782%, #d6d6d6 41.1764705882%, transparent 41.1764705882%, transparent 42.0168067227%, #d6d6d6 42.0168067227%, #d6d6d6 49.5798319328%, transparent 49.5798319328%, transparent 50.4201680672%, #d6d6d6 50.4201680672%, #d6d6d6 57.9831932773%, transparent 57.9831932773%, transparent 58.8235294118%, #d6d6d6 58.8235294118%, #d6d6d6 66.3865546218%, transparent 66.3865546218%, transparent 67.2268907563%, #d6d6d6 67.2268907563%, #d6d6d6 74.7899159664%, transparent 74.7899159664%, transparent 75.6302521008%, #d6d6d6 75.6302521008%, #d6d6d6 83.1932773109%, transparent 83.1932773109%, transparent 84.0336134454%, #d6d6d6 84.0336134454%, #d6d6d6 91.5966386555%, transparent 91.5966386555%, transparent 92.4369747899%, #d6d6d6 92.4369747899%, #d6d6d6 100%, transparent 100%);
-  content: "";
-  display: inline-block;
-  height: 100%;
-  left: 0;
-  margin: 0 auto;
-  max-width: 75em;
-  opacity: 0.2;
-  pointer-events: none;
-  position: fixed;
-  right: 0;
-  width: 100%;
-  z-index: -1;
-}
-
 @font-face {
   font-family: 'TimesNewRomanPSMT';
-  src: url("TimesNewRomanPSMT.eot?#iefix") format("embedded-opentype"), url("TimesNewRomanPSMT.woff") format("woff"), url("TimesNewRomanPSMT.ttf") format("truetype"), url("TimesNewRomanPSMT.svg#TimesNewRomanPSMT") format("svg");
+  src: url("fonts/TimesNewRomanPSMT.eot?#iefix") format("embedded-opentype"), url("fonts/TimesNewRomanPSMT.woff") format("woff"), url("fonts/TimesNewRomanPSMT.ttf") format("truetype"), url("fonts/TimesNewRomanPSMT.svg#TimesNewRomanPSMT") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Cabin-Bold';
-  src: url("Cabin-Bold.eot?#iefix") format("embedded-opentype"), url("Cabin-Bold.otf") format("opentype"), url("Cabin-Bold.woff") format("woff"), url("Cabin-Bold.ttf") format("truetype"), url("Cabin-Bold.svg#Cabin-Bold") format("svg");
+  src: url("fonts/Cabin-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/Cabin-Bold.otf") format("opentype"), url("fonts/Cabin-Bold.woff") format("woff"), url("fonts/Cabin-Bold.ttf") format("truetype"), url("fonts/Cabin-Bold.svg#Cabin-Bold") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Cabin-Regular';
-  src: url("Cabin-Regular.eot?#iefix") format("embedded-opentype"), url("Cabin-Regular.otf") format("opentype"), url("Cabin-Regular.woff") format("woff"), url("Cabin-Regular.ttf") format("truetype"), url("Cabin-Regular.svg#Cabin-Regular") format("svg");
+  src: url("fonts/Cabin-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/Cabin-Regular.otf") format("opentype"), url("fonts/Cabin-Regular.woff") format("woff"), url("fonts/Cabin-Regular.ttf") format("truetype"), url("fonts/Cabin-Regular.svg#Cabin-Regular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -467,6 +448,12 @@ hr {
   margin-bottom: 1.5em;
 }
 
+/* line 31, sass/elements/_elements.scss */
+h1 {
+  font-family: "TimesNewRomanPSMT";
+  font-size: 3em;
+}
+
 /* line 1, sass/elements/_lists.scss */
 ul, ol {
   margin: 0 0 1.5em 3em;
@@ -499,7 +486,7 @@ dd {
   margin: 0 1.5em 1.5em;
 }
 
-/* line 33, sass/elements/_elements.scss */
+/* line 38, sass/elements/_elements.scss */
 img {
   height: auto;
   /* Make sure images are scaled correctly. */
@@ -521,36 +508,8 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
-  background: #e6e6e6;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.8);
-  font-size: 12px;
-  font-size: 0.75rem;
   line-height: 1;
-  padding: .6em 1em .4em;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
-}
-/* line 16, sass/forms/_buttons.scss */
-button:hover,
-input[type="button"]:hover,
-input[type="reset"]:hover,
-input[type="submit"]:hover {
-  border-color: #ccc #bbb #aaa;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
-}
-/* line 21, sass/forms/_buttons.scss */
-button:active, button:focus,
-input[type="button"]:active,
-input[type="button"]:focus,
-input[type="reset"]:active,
-input[type="reset"]:focus,
-input[type="submit"]:active,
-input[type="submit"]:focus {
-  border-color: #aaa #bbb #bbb;
-  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
+  padding: .3em .5em .1em .5em;
 }
 
 /* line 1, sass/forms/_fields.scss */
@@ -678,15 +637,14 @@ a:hover, a:active {
 }
 /* line 52, sass/navigation/_menus.scss */
 .main-navigation li {
-  float: left;
-  position: relative;
+  display: inline-block;
 }
-/* line 61, sass/navigation/_menus.scss */
+/* line 60, sass/navigation/_menus.scss */
 .main-navigation a {
   display: block;
   text-decoration: none;
 }
-/* line 66, sass/navigation/_menus.scss */
+/* line 65, sass/navigation/_menus.scss */
 .main-navigation .current_page_item > a,
 .main-navigation .current-menu-item > a,
 .main-navigation .current_page_ancestor > a,
@@ -695,37 +653,45 @@ a:hover, a:active {
 }
 
 /* Small menu. */
-/* line 78, sass/navigation/_menus.scss */
+/* line 74, sass/navigation/_menus.scss */
+.menu-toggle {
+  background-color: #8F221D;
+  border: none;
+  border-radius: 0;
+  color: #ffffff;
+}
+
+/* line 81, sass/navigation/_menus.scss */
 .main-navigation.toggled ul {
   display: block;
 }
 
 @media (min-width: 1200px) {
-  /* line 83, sass/navigation/_menus.scss */
+  /* line 86, sass/navigation/_menus.scss */
   .menu-toggle {
     display: none;
   }
 
-  /* line 86, sass/navigation/_menus.scss */
+  /* line 89, sass/navigation/_menus.scss */
   .main-navigation ul {
     display: block;
   }
 }
-/* line 95, sass/navigation/_menus.scss */
+/* line 98, sass/navigation/_menus.scss */
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden;
 }
-/* line 100, sass/navigation/_menus.scss */
+/* line 103, sass/navigation/_menus.scss */
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
   float: left;
   width: 50%;
 }
-/* line 105, sass/navigation/_menus.scss */
+/* line 108, sass/navigation/_menus.scss */
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
@@ -1032,14 +998,13 @@ object {
 }
 /* line 11, sass/page-templates/_header.scss */
 #masthead .flex-wrapper {
-  padding: 20px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -webkit-flex-wrap: no-wrap;
+      -ms-flex-wrap: no-wrap;
+          flex-wrap: no-wrap;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
@@ -1060,47 +1025,45 @@ object {
 #masthead .flex-wrapper .site-branding {
   width: 55%;
   max-width: 225px;
+  padding: 20px;
 }
-/* line 25, sass/page-templates/_header.scss */
+/* line 26, sass/page-templates/_header.scss */
 #masthead .flex-wrapper .site-branding .custom-logo {
   display: block;
 }
-/* line 29, sass/page-templates/_header.scss */
+/* line 30, sass/page-templates/_header.scss */
 #masthead .flex-wrapper .site-branding .custom-logo-link {
   display: block;
   padding-bottom: 30px;
 }
-/* line 34, sass/page-templates/_header.scss */
+/* line 35, sass/page-templates/_header.scss */
 #masthead .flex-wrapper .phone-wrapper {
   text-align: right;
+  padding-right: 20px;
 }
-/* line 36, sass/page-templates/_header.scss */
+/* line 38, sass/page-templates/_header.scss */
 #masthead .flex-wrapper .phone-wrapper .masthead-tel {
   font-family: "TimesNewRomanPSMT";
   font-size: 1.3em;
   font-style: italic;
 }
-/* line 40, sass/page-templates/_header.scss */
+/* line 42, sass/page-templates/_header.scss */
 #masthead .flex-wrapper .phone-wrapper .masthead-tel a {
   color: #8F221D;
   text-decoration: none;
 }
-/* line 45, sass/page-templates/_header.scss */
+/* line 47, sass/page-templates/_header.scss */
 #masthead .flex-wrapper .phone-wrapper .masthead-tel span {
   font-family: "Cabin-Bold";
   font-style: normal;
   font-size: 1.4em;
 }
-/* line 51, sass/page-templates/_header.scss */
+/* line 53, sass/page-templates/_header.scss */
 #masthead .flex-wrapper .phone-wrapper .main-navigation li {
   padding: 20px;
   font-size: 1.3em;
 }
-/* line 54, sass/page-templates/_header.scss */
-#masthead .flex-wrapper .phone-wrapper .main-navigation li:last-child {
-  padding-right: 0;
-}
-/* line 57, sass/page-templates/_header.scss */
+/* line 56, sass/page-templates/_header.scss */
 #masthead .flex-wrapper .phone-wrapper .main-navigation li a {
   color: #7f7f7f;
 }
@@ -1116,18 +1079,19 @@ object {
   padding: 1.25em 1.875em 3.125em 1.875em;
   font-size: .7em;
   display: block;
+  margin-top: 35px;
 }
-/* line 9, sass/page-templates/_footer.scss */
+/* line 10, sass/page-templates/_footer.scss */
 .site-footer .footer-address-section {
   width: 40%;
   text-align: left;
   float: left;
 }
-/* line 13, sass/page-templates/_footer.scss */
+/* line 14, sass/page-templates/_footer.scss */
 .site-footer .footer-address-section .footer-phone {
   font-size: 1.5em;
 }
-/* line 17, sass/page-templates/_footer.scss */
+/* line 18, sass/page-templates/_footer.scss */
 .site-footer .footer-equal-housing {
   width: 55%;
   text-align: right;
@@ -1165,18 +1129,18 @@ object {
 /*--------------------------------------------------------------
 ## Home Page
 --------------------------------------------------------------*/
-/* line 3, sass/page-templates/_homepage.scss */
+/* line 2, sass/page-templates/_homepage.scss */
 .page-template-front-page #slider {
   border: none;
   padding: 0;
   margin: 0;
 }
-/* line 10, sass/page-templates/_homepage.scss */
+/* line 9, sass/page-templates/_homepage.scss */
 .page-template-front-page #slider .flex-control-nav {
   bottom: 10%;
   z-index: 999;
 }
-/* line 14, sass/page-templates/_homepage.scss */
+/* line 13, sass/page-templates/_homepage.scss */
 .page-template-front-page #slider .flex-control-nav li a {
   width: 35px;
   height: 35px;
@@ -1187,35 +1151,56 @@ object {
   text-indent: -9999px;
   border-radius: 0;
 }
-/* line 26, sass/page-templates/_homepage.scss */
+/* line 25, sass/page-templates/_homepage.scss */
 .page-template-front-page #slider .flex-control-nav .flex-active {
   background: #daba75;
 }
-/* line 33, sass/page-templates/_homepage.scss */
+/* line 30, sass/page-templates/_homepage.scss */
 .page-template-front-page .entry-title {
   display: none;
 }
-/* line 36, sass/page-templates/_homepage.scss */
+/* line 33, sass/page-templates/_homepage.scss */
 .page-template-front-page .entry-content {
   text-align: center;
 }
-/* line 38, sass/page-templates/_homepage.scss */
+/* line 35, sass/page-templates/_homepage.scss */
 .page-template-front-page .entry-content h1 {
   font-family: "TimesNewRomanPSMT";
   font-weight: 400;
   color: #8F221D;
 }
-/* line 43, sass/page-templates/_homepage.scss */
+/* line 40, sass/page-templates/_homepage.scss */
 .page-template-front-page .entry-content p {
   font-family: "Cabin-Regular";
   font-weight: 400;
 }
-/* line 49, sass/page-templates/_homepage.scss */
+/* line 45, sass/page-templates/_homepage.scss */
 .page-template-front-page .highlight-box {
   float: left;
-  width: 31%;
-  padding: 10px;
-  margin: 0 auto;
+  width: 31.6666666%;
+  margin: 10px;
+  position: relative;
+  text-align: center;
+  background-color: #000000;
+}
+/* line 52, sass/page-templates/_homepage.scss */
+.page-template-front-page .highlight-box img {
+  display: block;
+  opacity: .6;
+}
+/* line 56, sass/page-templates/_homepage.scss */
+.page-template-front-page .highlight-box span {
+  color: #ffffff;
+  font-size: 2.59em;
+  font-family: "TimesNewRomanPSMT";
+  line-height: 1;
+  display: block;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 10;
+  top: 30%;
 }
 
 /*--------------------------------------------------------------
@@ -1237,15 +1222,29 @@ object {
     display: block;
     margin-right: 0.8403361345%;
     width: 66.3865546218%;
-    padding: 0 20px;
+    padding: 0 40px;
   }
   /* line 89, sass/grid/_span-columns.scss */
   .page-template-page-amenities-page #primary:last-child {
     margin-right: 0;
   }
 }
+/* line 7, sass/page-templates/_amenities-page.scss */
+.page-template-page-amenities-page #primary .entry-header {
+  text-align: left;
+}
+/* line 10, sass/page-templates/_amenities-page.scss */
+.page-template-page-amenities-page #primary .entry-content {
+  text-align: left;
+}
+/* line 13, sass/page-templates/_amenities-page.scss */
+.page-template-page-amenities-page #primary .entry-content h2 {
+  color: #8F221D;
+  font-family: "Cabin-Bold";
+  margin: 0;
+}
 @media screen and (min-width: 768px) {
-  /* line 8, sass/page-templates/_amenities-page.scss */
+  /* line 21, sass/page-templates/_amenities-page.scss */
   .page-template-page-amenities-page #secondary {
     float: left;
     display: block;

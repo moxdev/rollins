@@ -19,19 +19,21 @@ function rr_test_front_page_boxes() {
                 $text = get_sub_field( 'highlight_text' ); ?>
 
                     <div class="highlight-box">
-                        <?php if( $url ): ?>
-                            <a href="<?php echo $url; ?>">
-                        <?php endif;
-                        if( $image ): ?>
-                            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-                        <?php endif;
-                        if( $text ): ?>
-                            <span><?php echo $text; ?></span>
-                        <?php endif;
-                        if( $url ): ?>
-                            </a>
-                        <?php endif; ?>
-                    </div>
+                        <div class="highlight-inner">
+                            <?php if( $url ): ?>
+                                <a href="<?php echo $url; ?>">
+                            <?php endif;
+                            if( $image ): ?>
+                                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                            <?php endif;
+                            if( $text ): ?>
+                                <span><?php echo $text; ?></span>
+                            <?php endif;
+                            if( $url ): ?>
+                                </a>
+                            <?php endif; ?>
+                        </div><!-- highlight-box -->
+                    </div><!-- highlight-inner -->
             <?php endwhile; ?>
         </div>
     <?php endif;

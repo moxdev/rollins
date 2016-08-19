@@ -1,21 +1,21 @@
 @font-face {
   font-family: 'TimesNewRomanPSMT';
-  src: url('TimesNewRomanPSMT.eot?#iefix') format('embedded-opentype'),  url('TimesNewRomanPSMT.woff') format('woff'), url('TimesNewRomanPSMT.ttf')  format('truetype'), url('TimesNewRomanPSMT.svg#TimesNewRomanPSMT') format('svg');
+  src: url('fonts/TimesNewRomanPSMT.eot?#iefix') format('embedded-opentype'),  url('fonts/TimesNewRomanPSMT.woff') format('woff'), url('fonts/TimesNewRomanPSMT.ttf')  format('truetype'), url('fonts/TimesNewRomanPSMT.svg#TimesNewRomanPSMT') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Cabin-Bold';
-  src: url('Cabin-Bold.eot?#iefix') format('embedded-opentype'),  url('Cabin-Bold.otf')  format('opentype'),
-         url('Cabin-Bold.woff') format('woff'), url('Cabin-Bold.ttf')  format('truetype'), url('Cabin-Bold.svg#Cabin-Bold') format('svg');
+  src: url('fonts/Cabin-Bold.eot?#iefix') format('embedded-opentype'),  url('fonts/Cabin-Bold.otf')  format('opentype'),
+         url('fonts/Cabin-Bold.woff') format('woff'), url('fonts/Cabin-Bold.ttf')  format('truetype'), url('fonts/Cabin-Bold.svg#Cabin-Bold') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Cabin-Regular';
-  src: url('Cabin-Regular.eot?#iefix') format('embedded-opentype'),  url('Cabin-Regular.otf')  format('opentype'),
-         url('Cabin-Regular.woff') format('woff'), url('Cabin-Regular.ttf')  format('truetype'), url('Cabin-Regular.svg#Cabin-Regular') format('svg');
+  src: url('fonts/Cabin-Regular.eot?#iefix') format('embedded-opentype'),  url('fonts/Cabin-Regular.otf')  format('opentype'),
+         url('fonts/Cabin-Regular.woff') format('woff'), url('fonts/Cabin-Regular.ttf')  format('truetype'), url('fonts/Cabin-Regular.svg#Cabin-Regular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -29,3 +29,4 @@ $font__code: $font-cabin-regular;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
+$font_h1: $font-times-regular;

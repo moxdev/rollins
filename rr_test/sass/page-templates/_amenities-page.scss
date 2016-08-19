@@ -2,8 +2,21 @@
     #primary {
         @include media($tablet) {
             @include span-columns(8);
-            padding: 0 20px;
+            padding: 0 40px;
         }
+        .entry-header {
+            text-align: left;
+        }
+        .entry-content {
+            text-align: left;
+
+            h2 {
+                color: $red;
+                font-family: $font-cabin-bold;
+                margin: 0;
+            }
+        }
+
     }
     #secondary {
         @include media($tablet) {

@@ -1,5 +1,4 @@
 .page-template-front-page {
-
     #slider {
         border: none;
         padding: 0;
@@ -27,8 +26,6 @@
                 background: $yellow;
             }
         }
-
-
     }
     .entry-title {
         display: none;
@@ -45,12 +42,30 @@
             font-weight: 400;
         }
     }
-
     .highlight-box {
         float: left;
-        width: 31%;
-        padding: 10px;
-        margin: 0 auto;
+        width: 31.6666666%;
+        margin: 10px;
+        position: relative;
+        text-align: center;
+        background-color: $black;
+       img {
+          display: block;
+          opacity: .6;
+       }
+       span {
+          color: $white;
+          font-size: 2.59em;
+          font-family: $font-times-regular;
+          line-height: 1;
+          display: block;
+          position: absolute;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+          z-index: 10;
+          top: 30%;
+       }
     }
 }
 

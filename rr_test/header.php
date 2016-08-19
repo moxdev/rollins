@@ -39,7 +39,7 @@
 				    <?php endif;
 				?>
 				<nav id="site-navigation" class="main-navigation flex-item" role="navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'rr_test' ); ?></button>
+					<button class="menu-toggle flex-item" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'rr_test' ); ?></button>
 
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation flex-item-->

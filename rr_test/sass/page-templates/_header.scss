@@ -1,6 +1,5 @@
 #masthead {
     background-color: #fff;
-    padding-top: 10px;
     color: #000;
 
     &:after {
@@ -10,9 +9,11 @@
         background-color: $red;
     }
     .flex-wrapper {
+        padding: 20px;
         display:flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        align-items: flex-end;
 
         .flex-item {
             flex: 1 1 auto;
@@ -31,13 +32,30 @@
             }
         }
         .phone-wrapper {
+            text-align: right;
             .masthead-tel {
-                font-family:$font__main;
-                font-size: .875em;
-                color: $red;
+                font-family:$font-times-regular;
+                font-size: 1.3em;
+                font-style: italic;
+                a {
+                    color: $red;
+                    text-decoration: none;
+                }
 
                 span {
-                    font-family: $font__main;
+                    font-family: $font-cabin-bold;
+                    font-style: normal;
+                    font-size: 1.4em;
+                }
+            }
+            .main-navigation li {
+                padding: 20px;
+                font-size: 1.3em;
+                &:last-child {
+                    padding-right: 0;
+                }
+                a{
+                    color: $blackness;
                 }
             }
         }

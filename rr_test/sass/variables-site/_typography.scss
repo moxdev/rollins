@@ -1,31 +1,31 @@
-$font__main: sans-serif;
-$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+@font-face {
+  font-family: 'TimesNewRomanPSMT';
+  src: url('TimesNewRomanPSMT.eot?#iefix') format('embedded-opentype'),  url('TimesNewRomanPSMT.woff') format('woff'), url('TimesNewRomanPSMT.ttf')  format('truetype'), url('TimesNewRomanPSMT.svg#TimesNewRomanPSMT') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cabin-Bold';
+  src: url('Cabin-Bold.eot?#iefix') format('embedded-opentype'),  url('Cabin-Bold.otf')  format('opentype'),
+         url('Cabin-Bold.woff') format('woff'), url('Cabin-Bold.ttf')  format('truetype'), url('Cabin-Bold.svg#Cabin-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cabin-Regular';
+  src: url('Cabin-Regular.eot?#iefix') format('embedded-opentype'),  url('Cabin-Regular.otf')  format('opentype'),
+         url('Cabin-Regular.woff') format('woff'), url('Cabin-Regular.ttf')  format('truetype'), url('Cabin-Regular.svg#Cabin-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font-cabin-regular: 'Cabin-Regular';
+$font-cabin-bold: 'Cabin-Bold';
+$font-times-regular: 'TimesNewRomanPSMT';
+
+$font__main: $font-cabin-regular;
+$font__code: $font-cabin-regular;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
-
-@font-face {
-    font-family: 'cabin-regular';
-    src: url('fonts/cabin-regular-webfont.woff2') format('woff2'),
-         url('fonts/cabin-regular-webfont') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'cabin-bold';
-    src: url('fonts/cabin-bold-webfont.woff2') format('woff2'),
-         url('fonts/cabin-bold-webfont.woff2') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'timesregular';
-    src: url('fonts/times-roman-webfont.woff2') format('woff2'),
-         url('fonts/times-roman-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
- }
-
-$font-cabin-regular: 'cabin-regular', sans-serif;
-$font-cabin-bold: 'cabin-bold', sans-serif;
-$font-times-regular: 'timesregular', sans-serif;

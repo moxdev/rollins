@@ -80,20 +80,20 @@ body:before {
 }
 
 @font-face {
-  font-family: 'cabin-regular';
-  src: url("fonts/cabin-regular-webfont.woff2") format("woff2"), url("fonts/cabin-regular-webfont") format("woff");
+  font-family: 'TimesNewRomanPSMT';
+  src: url("TimesNewRomanPSMT.eot?#iefix") format("embedded-opentype"), url("TimesNewRomanPSMT.woff") format("woff"), url("TimesNewRomanPSMT.ttf") format("truetype"), url("TimesNewRomanPSMT.svg#TimesNewRomanPSMT") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'cabin-bold';
-  src: url("fonts/cabin-bold-webfont.woff2") format("woff2"), url("fonts/cabin-bold-webfont.woff2") format("woff");
-  font-weight: bold;
+  font-family: 'Cabin-Bold';
+  src: url("Cabin-Bold.eot?#iefix") format("embedded-opentype"), url("Cabin-Bold.otf") format("opentype"), url("Cabin-Bold.woff") format("woff"), url("Cabin-Bold.ttf") format("truetype"), url("Cabin-Bold.svg#Cabin-Bold") format("svg");
+  font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'timesregular';
-  src: url("fonts/times-roman-webfont.woff2") format("woff2"), url("fonts/times-roman-webfont.woff") format("woff");
+  font-family: 'Cabin-Regular';
+  src: url("Cabin-Regular.eot?#iefix") format("embedded-opentype"), url("Cabin-Regular.otf") format("opentype"), url("Cabin-Regular.woff") format("woff"), url("Cabin-Regular.ttf") format("truetype"), url("Cabin-Regular.svg#Cabin-Regular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -360,7 +360,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "Cabin-Regular";
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
@@ -406,7 +406,7 @@ pre {
 
 /* line 28, sass/typography/_copy.scss */
 code, kbd, tt, var {
-  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-family: "Cabin-Regular";
   font-size: 15px;
   font-size: 0.9375rem;
 }
@@ -688,44 +688,114 @@ a:hover, a:active {
 }
 
 /* Small menu. */
-/* line 74, sass/navigation/_menus.scss */
-.menu-toggle,
+@media (min-width: 320px) {
+  /* line 74, sass/navigation/_menus.scss */
+  .menu-toggle {
+    background-color: #000;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 74, sass/navigation/_menus.scss */
+  .menu-toggle {
+    display: none;
+  }
+}
+
+/* line 86, sass/navigation/_menus.scss */
 .main-navigation.toggled ul {
   display: block;
 }
 
-@media screen and (min-width: 37.5em) {
-  /* line 80, sass/navigation/_menus.scss */
-  .menu-toggle {
-    display: none;
-  }
-
-  /* line 83, sass/navigation/_menus.scss */
-  .main-navigation ul {
-    display: block;
-  }
-}
-/* line 92, sass/navigation/_menus.scss */
+/* line 104, sass/navigation/_menus.scss */
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden;
 }
-/* line 97, sass/navigation/_menus.scss */
+/* line 109, sass/navigation/_menus.scss */
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
   float: left;
   width: 50%;
 }
-/* line 102, sass/navigation/_menus.scss */
+/* line 114, sass/navigation/_menus.scss */
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
   float: right;
   text-align: right;
   width: 50%;
+}
+
+/*--------------------------------------------------------------
+## Header
+--------------------------------------------------------------*/
+/* line 1, sass/navigation/_header.scss */
+#masthead {
+  color: #8F221D;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  border-bottom: 2px solid #8F221D;
+}
+/* line 7, sass/navigation/_header.scss */
+#masthead .flex-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+/* line 13, sass/navigation/_header.scss */
+#masthead .flex-item {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-align-content: flex-end;
+      -ms-flex-line-pack: end;
+          align-content: flex-end;
+}
+/* line 19, sass/navigation/_header.scss */
+#masthead .phone-wrapper {
+  text-align: right;
+}
+/* line 21, sass/navigation/_header.scss */
+#masthead .phone-wrapper .masthead-tel {
+  padding-right: 10px;
+  font-size: 1.3em;
+  font-style: italic;
+}
+/* line 25, sass/navigation/_header.scss */
+#masthead .phone-wrapper .masthead-tel a {
+  text-decoration: none;
+}
+/* line 27, sass/navigation/_header.scss */
+#masthead .phone-wrapper .masthead-tel a span {
+  font-family: "Cabin-Bold";
+  font-style: normal;
+  font-size: 1.4em;
+}
+/* line 35, sass/navigation/_header.scss */
+#masthead .phone-wrapper #site-navigation ul {
+  display: inline-block;
+}
+/* line 37, sass/navigation/_header.scss */
+#masthead .phone-wrapper #site-navigation ul li a {
+  font-size: 1.3em;
+  padding: 10px;
+  color: #7f7f7f;
+}
+/* line 42, sass/navigation/_header.scss */
+#masthead .phone-wrapper #site-navigation ul li.current_page_item a {
+  color: #8F221D;
 }
 
 /*--------------------------------------------------------------
@@ -1010,50 +1080,6 @@ object {
 # Layout
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
-## Header
---------------------------------------------------------------*/
-/* line 1, sass/page-templates/_header.scss */
-#masthead {
-  width: 100%;
-  height: auto;
-  color: #8F221D;
-  background-color: #ffffff;
-  padding: 10px 20px;
-  border-bottom: 2px solid #8F221D;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-/* line 11, sass/page-templates/_header.scss */
-#masthead .flex-item {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-/* line 20, sass/page-templates/_header.scss */
-#masthead .main-navigation {
-  -webkit-box-flex: 2;
-  -webkit-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
-  -webkit-align-self: flex-end;
-      -ms-flex-item-align: end;
-          align-self: flex-end;
-}
-/* line 26, sass/page-templates/_header.scss */
-#masthead #site-navigation ul li a {
-  font-size: 1.3em;
-  padding: 10px;
-  color: #7f7f7f;
-}
-/* line 31, sass/page-templates/_header.scss */
-#masthead #site-navigation ul li.current_page_item a {
-  color: #8F221D;
-}
-
-/*--------------------------------------------------------------
 ## Footer
 --------------------------------------------------------------*/
 /* line 2, sass/page-templates/_footer.scss */
@@ -1100,13 +1126,13 @@ object {
 }
 /* line 8, sass/page-templates/_content.scss */
 #content .site-main .entry-title {
-  font-family: "timesregular", sans-serif;
+  font-family: "TimesNewRomanPSMT";
   font-weight: 400;
   color: #8F221D;
 }
 /* line 13, sass/page-templates/_content.scss */
 #content .site-main .entry-content {
-  font-family: "cabin-regular", sans-serif;
+  font-family: "Cabin-Regular";
   font-weight: 400;
 }
 
@@ -1149,13 +1175,13 @@ object {
 }
 /* line 38, sass/page-templates/_homepage.scss */
 .page-template-front-page .entry-content h1 {
-  font-family: "timesregular", sans-serif;
+  font-family: "TimesNewRomanPSMT";
   font-weight: 400;
   color: #8F221D;
 }
 /* line 43, sass/page-templates/_homepage.scss */
 .page-template-front-page .entry-content p {
-  font-family: "cabin-regular", sans-serif;
+  font-family: "Cabin-Regular";
   font-weight: 400;
 }
 /* line 49, sass/page-templates/_homepage.scss */

@@ -1,0 +1,48 @@
+#masthead {
+    color: $red;
+    background-color: $white;
+    padding: 10px 20px;
+    border-bottom: 2px solid $red;
+
+    .flex-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+    }
+
+    .flex-item {
+        flex: 1;
+        align-content: flex-end;
+    }
+    .site-branding {
+    }
+    .phone-wrapper {
+        text-align: right;
+        .masthead-tel {
+            padding-right: 10px;
+            font-size: 1.3em;
+            font-style: italic;
+            a {
+                text-decoration: none;
+                span {
+                    font-family: $font-cabin-bold;
+                    font-style: normal;
+                    font-size: 1.4em;
+                }
+            }
+        }
+        #site-navigation {
+            ul {
+                display: inline-block;
+                li a {
+                    font-size: 1.3em;
+                    padding: 10px;
+                    color: $blackness;
+                }
+                li.current_page_item a {
+                    color: $red;
+                }
+            }
+        }
+    }
+}

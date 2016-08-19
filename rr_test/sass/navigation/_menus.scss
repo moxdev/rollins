@@ -48,7 +48,7 @@
 			left: auto;
 		}
 	}
-	
+
 	li {
 		float: left;
 		position: relative;
@@ -57,7 +57,7 @@
 		&.focus > a {
 		}
 	}
-	
+
 	a {
 		display: block;
 		text-decoration: none;
@@ -71,19 +71,31 @@
 }
 
 /* Small menu. */
-.menu-toggle,
+.menu-toggle {
+	@include respond-to(iphone) {
+	    background-color: #000;
+
+	}
+	@include respond-to(desktop) {
+	    display: none;
+	}
+
+}
+
+
 .main-navigation.toggled ul {
 	display: block;
 }
 
-@media screen and (min-width: 37.5em) {
-	.menu-toggle {
-		display: none;
-	}
-	.main-navigation ul {
-		display: block;
-	}
-}
+
+// @media screen and (min-width: 37.5em) {
+// 	.menu-toggle {
+// 		display: none;
+// 	}
+// 	.main-navigation ul {
+// 		display: block;
+// 	}
+// }
 
 .comment-navigation,
 .posts-navigation,

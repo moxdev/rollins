@@ -4,17 +4,53 @@
 
     .site-main {
         text-align: center;
-
-        .entry-title {
-            font-family: $font-times-regular;
-            font-weight: 400;
-            color: $red;
-        }
         .entry-content {
             font-family: $font-cabin-regular;
-            font-weight: 400;
-            max-width: 1000px;
+            max-width: 1200px;
             margin: 0 auto;
+        }
+        @include respond-to(iphone) {
+            @include pad(0 10px);
+            h1 {
+                font-size: 1.5em;
+            }
+            .entry-content {
+                p {
+                    font-size: .9em;
+                }
+            }
+        }
+        @include respond-to(tablet) {
+            @include pad(0 10px);
+            h1 {
+                font-size: 2em;
+            }
+            .entry-content {
+                p {
+                    font-size: 1em;
+                }
+            }
+        }
+        @include respond-to(laptop) {
+            @include pad(0 20px);
+            h1 {
+                font-size: 2.5em;
+            }
+            .entry-content {
+                p {
+                    font-size: 1.2em;
+                }
+            }
+        }
+        @include respond-to(desktop) {
+            h1 {
+                font-size: 3em;
+            }
+            .entry-content {
+                p {
+                    font-size: 1.3em;
+                }
+            }
         }
     }
 }

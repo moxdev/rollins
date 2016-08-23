@@ -1,7 +1,6 @@
 #masthead {
     background-color: #fff;
     color: #000;
-
     &:after {
         content: '';
         display: block;
@@ -17,33 +16,25 @@
             flex: 1 1 auto;
         }
         .site-branding {
-            width: 55%;
             max-width: 225px;
-            padding: 20px;
-
             .custom-logo {
-                display: block;
+                // display: block;
             }
             .custom-logo-link {
-                display: block;
-                padding-bottom: 30px;
+                // display: block;
             }
         }
         .phone-wrapper {
             text-align: right;
             .masthead-tel {
                 font-family:$font-times-regular;
-                font-size: 1.3em;
                 font-style: italic;
-                padding-right: 20px;
                 a {
                     color: $red;
                     text-decoration: none;
                 }
                 span {
                     font-family: $font-cabin-bold;
-                    font-style: normal;
-                    font-size: 1.4em;
                 }
             }
             .main-navigation li {
@@ -55,48 +46,17 @@
             }
         }
     }
-
-
-
-
-
-
-
-    // @include respond-to(x-small) {
-    //     .masthead-tel {
-    //         font-size: 1em;
-    //     }
-    // }
-
-    // @include respond-to(small) {
-    //     .site-branding {
-    //         max-width: 275px;
-    //     }
-
-    //     .masthead-tel {
-    //         span {
-    //             display: inline;
-    //         }
-    //     }
-    // }
-
-    // @include respond-to(large) {
-    //     padding-top: 25px;
-
-    //     .site-branding {
-    //         padding-bottom: 5px;
-    //         max-width: 300px;
-
-    //         .custom-logo-link {
-    //             padding-bottom: 0;
-    //         }
-    //     }
-    //     .flex-item {
-    //         position: relative;
-
-    //         .masthead-tel {
-    //             padding-top: 0;
-    //         }
-    //     }
-    // }
+    @include respond-to(iphone) {
+        .flex-wrapper {
+            padding: 10px;
+            margin-bottom: 10px;
+            .masthead-tel {
+                visibility: collapse;
+                padding-bottom: 10px;
+                span {
+                    visibility: visible;
+                }
+            }
+        }
+    }
 }

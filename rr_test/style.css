@@ -451,7 +451,7 @@ hr {
 /* line 31, sass/elements/_elements.scss */
 h1 {
   font-family: "TimesNewRomanPSMT";
-  font-size: 3em;
+  color: #8F221D;
   margin: 0;
 }
 
@@ -990,14 +990,14 @@ object {
   background-color: #fff;
   color: #000;
 }
-/* line 5, sass/page-templates/_header.scss */
+/* line 4, sass/page-templates/_header.scss */
 #masthead:after {
   content: '';
   display: block;
   height: 2px;
   background-color: #8F221D;
 }
-/* line 11, sass/page-templates/_header.scss */
+/* line 10, sass/page-templates/_header.scss */
 #masthead .flex-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1015,58 +1015,59 @@ object {
       -ms-flex-align: end;
           align-items: flex-end;
 }
-/* line 16, sass/page-templates/_header.scss */
+/* line 15, sass/page-templates/_header.scss */
 #masthead .flex-wrapper .flex-item {
   -webkit-box-flex: 1;
   -webkit-flex: 1 1 auto;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
 }
-/* line 19, sass/page-templates/_header.scss */
+/* line 18, sass/page-templates/_header.scss */
 #masthead .flex-wrapper .site-branding {
-  width: 55%;
   max-width: 225px;
-  padding: 20px;
-}
-/* line 24, sass/page-templates/_header.scss */
-#masthead .flex-wrapper .site-branding .custom-logo {
-  display: block;
 }
 /* line 27, sass/page-templates/_header.scss */
-#masthead .flex-wrapper .site-branding .custom-logo-link {
-  display: block;
-  padding-bottom: 30px;
-}
-/* line 32, sass/page-templates/_header.scss */
 #masthead .flex-wrapper .phone-wrapper {
   text-align: right;
 }
-/* line 34, sass/page-templates/_header.scss */
+/* line 29, sass/page-templates/_header.scss */
 #masthead .flex-wrapper .phone-wrapper .masthead-tel {
   font-family: "TimesNewRomanPSMT";
-  font-size: 1.3em;
   font-style: italic;
-  padding-right: 20px;
 }
-/* line 39, sass/page-templates/_header.scss */
+/* line 32, sass/page-templates/_header.scss */
 #masthead .flex-wrapper .phone-wrapper .masthead-tel a {
   color: #8F221D;
   text-decoration: none;
 }
-/* line 43, sass/page-templates/_header.scss */
+/* line 36, sass/page-templates/_header.scss */
 #masthead .flex-wrapper .phone-wrapper .masthead-tel span {
   font-family: "Cabin-Bold";
-  font-style: normal;
-  font-size: 1.4em;
 }
-/* line 49, sass/page-templates/_header.scss */
+/* line 40, sass/page-templates/_header.scss */
 #masthead .flex-wrapper .phone-wrapper .main-navigation li {
   padding: 20px;
   font-size: 1.3em;
 }
-/* line 52, sass/page-templates/_header.scss */
+/* line 43, sass/page-templates/_header.scss */
 #masthead .flex-wrapper .phone-wrapper .main-navigation li a {
   color: #7f7f7f;
+}
+@media (min-width: 315px) {
+  /* line 50, sass/page-templates/_header.scss */
+  #masthead .flex-wrapper {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  /* line 53, sass/page-templates/_header.scss */
+  #masthead .flex-wrapper .masthead-tel {
+    visibility: collapse;
+    padding-bottom: 10px;
+  }
+  /* line 56, sass/page-templates/_header.scss */
+  #masthead .flex-wrapper .masthead-tel span {
+    visibility: visible;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1074,19 +1075,9 @@ object {
 --------------------------------------------------------------*/
 /* line 2, sass/page-templates/_footer.scss */
 .site-footer {
-  height: auto;
   background-color: #8F221D;
   color: #ffffff;
-  padding: 1.25em 1.875em 3.125em 1.875em;
-  font-size: .7em;
   display: block;
-  margin-top: 35px;
-}
-/* line 10, sass/page-templates/_footer.scss */
-.site-footer .footer-address-section {
-  width: 40%;
-  text-align: left;
-  float: left;
 }
 /* line 14, sass/page-templates/_footer.scss */
 .site-footer .footer-address-section .footer-phone {
@@ -1095,19 +1086,65 @@ object {
 /* line 18, sass/page-templates/_footer.scss */
 .site-footer .footer-equal-housing {
   display: block;
-  width: 50%;
-  float: right;
-  text-align: right;
 }
 /* line 23, sass/page-templates/_footer.scss */
 .site-footer .footer-equal-housing svg {
   width: 60px;
-  float: right;
-  margin-left: 10px;
 }
-/* line 28, sass/page-templates/_footer.scss */
-.site-footer .footer-equal-housing .footer-disclaimer {
-  margin: 2px 70px 0 0;
+@media (min-width: 315px) {
+  /* line 2, sass/page-templates/_footer.scss */
+  .site-footer {
+    padding: 0.625em;
+    font-size: .6em;
+  }
+  /* line 35, sass/page-templates/_footer.scss */
+  .site-footer .footer-address-section {
+    text-align: center;
+  }
+  /* line 38, sass/page-templates/_footer.scss */
+  .site-footer .footer-equal-housing {
+    text-align: center;
+  }
+  /* line 40, sass/page-templates/_footer.scss */
+  .site-footer .footer-equal-housing svg {
+    display: block;
+    margin: 0.625em auto;
+  }
+  /* line 44, sass/page-templates/_footer.scss */
+  .site-footer .footer-equal-housing .footer-disclaimer {
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  /* line 2, sass/page-templates/_footer.scss */
+  .site-footer {
+    margin-top: 1.875em;
+    font-size: .7em;
+  }
+  /* line 52, sass/page-templates/_footer.scss */
+  .site-footer .footer-address-section {
+    width: 40%;
+    padding-right: 50px;
+    text-align: left;
+    float: left;
+  }
+  /* line 58, sass/page-templates/_footer.scss */
+  .site-footer .footer-equal-housing {
+    display: block;
+    width: 60%;
+    float: right;
+    text-align: right;
+  }
+  /* line 63, sass/page-templates/_footer.scss */
+  .site-footer .footer-equal-housing svg {
+    width: 60px;
+    float: right;
+    margin-left: 10px;
+  }
+  /* line 68, sass/page-templates/_footer.scss */
+  .site-footer .footer-equal-housing .footer-disclaimer {
+    margin: 2px 70px 0 0;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1118,7 +1155,7 @@ object {
   content: "";
   display: table;
   table-layout: fixed;
-  max-width: 75em;
+  max-width: 80em;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1126,18 +1163,63 @@ object {
 #content .site-main {
   text-align: center;
 }
-/* line 8, sass/page-templates/_content.scss */
-#content .site-main .entry-title {
-  font-family: "TimesNewRomanPSMT";
-  font-weight: 400;
-  color: #8F221D;
-}
-/* line 13, sass/page-templates/_content.scss */
+/* line 7, sass/page-templates/_content.scss */
 #content .site-main .entry-content {
   font-family: "Cabin-Regular";
-  font-weight: 400;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
+}
+@media (min-width: 315px) {
+  /* line 5, sass/page-templates/_content.scss */
+  #content .site-main {
+    padding: 0 10px;
+  }
+  /* line 14, sass/page-templates/_content.scss */
+  #content .site-main h1 {
+    font-size: 1.5em;
+  }
+  /* line 18, sass/page-templates/_content.scss */
+  #content .site-main .entry-content p {
+    font-size: .9em;
+  }
+}
+@media (min-width: 768px) {
+  /* line 5, sass/page-templates/_content.scss */
+  #content .site-main {
+    padding: 0 10px;
+  }
+  /* line 25, sass/page-templates/_content.scss */
+  #content .site-main h1 {
+    font-size: 2em;
+  }
+  /* line 29, sass/page-templates/_content.scss */
+  #content .site-main .entry-content p {
+    font-size: 1em;
+  }
+}
+@media (min-width: 992px) {
+  /* line 5, sass/page-templates/_content.scss */
+  #content .site-main {
+    padding: 0 20px;
+  }
+  /* line 36, sass/page-templates/_content.scss */
+  #content .site-main h1 {
+    font-size: 2.5em;
+  }
+  /* line 40, sass/page-templates/_content.scss */
+  #content .site-main .entry-content p {
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 46, sass/page-templates/_content.scss */
+  #content .site-main h1 {
+    font-size: 3em;
+  }
+  /* line 50, sass/page-templates/_content.scss */
+  #content .site-main .entry-content p {
+    font-size: 1.3em;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1149,15 +1231,12 @@ object {
   padding: 0;
   margin: 0;
 }
-/* line 9, sass/page-templates/_homepage.scss */
+/* line 7, sass/page-templates/_homepage.scss */
 .page-template-front-page #slider .flex-control-nav {
-  bottom: 10%;
   z-index: 999;
 }
-/* line 13, sass/page-templates/_homepage.scss */
+/* line 9, sass/page-templates/_homepage.scss */
 .page-template-front-page #slider .flex-control-nav li a {
-  width: 35px;
-  height: 35px;
   display: block;
   border: 2px solid #ffffff;
   background: #8F221D;
@@ -1165,58 +1244,118 @@ object {
   text-indent: -9999px;
   border-radius: 0;
 }
-/* line 25, sass/page-templates/_homepage.scss */
+/* line 19, sass/page-templates/_homepage.scss */
 .page-template-front-page #slider .flex-control-nav .flex-active {
   background: #be9d4d;
 }
-/* line 30, sass/page-templates/_homepage.scss */
+/* line 24, sass/page-templates/_homepage.scss */
 .page-template-front-page .entry-title {
   display: none;
 }
-/* line 33, sass/page-templates/_homepage.scss */
+/* line 27, sass/page-templates/_homepage.scss */
 .page-template-front-page .entry-content {
   text-align: center;
 }
-/* line 35, sass/page-templates/_homepage.scss */
+/* line 29, sass/page-templates/_homepage.scss */
 .page-template-front-page .entry-content h1 {
   font-family: "TimesNewRomanPSMT";
-  font-weight: 400;
-  color: #8F221D;
 }
-/* line 40, sass/page-templates/_homepage.scss */
+/* line 32, sass/page-templates/_homepage.scss */
 .page-template-front-page .entry-content p {
   font-family: "Cabin-Regular";
-  font-weight: 400;
 }
-/* line 45, sass/page-templates/_homepage.scss */
+/* line 36, sass/page-templates/_homepage.scss */
 .page-template-front-page .highlight-box {
-  float: left;
-  width: 31.6666666%;
-  margin: 10px;
-  position: relative;
-  text-align: center;
   background-color: #000000;
+  text-align: center;
+  position: relative;
 }
-/* line 52, sass/page-templates/_homepage.scss */
+/* line 40, sass/page-templates/_homepage.scss */
 .page-template-front-page .highlight-box img {
   display: block;
   opacity: .6;
-  width: 380px;
-  height: 213px;
 }
-/* line 58, sass/page-templates/_homepage.scss */
+/* line 44, sass/page-templates/_homepage.scss */
 .page-template-front-page .highlight-box span {
   color: #ffffff;
-  font-size: 2.59em;
   font-family: "TimesNewRomanPSMT";
   line-height: 1;
   display: block;
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  z-index: 10;
-  top: 30%;
+}
+@media (min-width: 315px) {
+  /* line 53, sass/page-templates/_homepage.scss */
+  .page-template-front-page #slider .flex-control-nav {
+    bottom: 20%;
+  }
+  /* line 55, sass/page-templates/_homepage.scss */
+  .page-template-front-page #slider .flex-control-nav li a {
+    width: 20px;
+    height: 20px;
+  }
+  /* line 61, sass/page-templates/_homepage.scss */
+  .page-template-front-page .highlight-box {
+    margin: 10px 0;
+  }
+  /* line 63, sass/page-templates/_homepage.scss */
+  .page-template-front-page .highlight-box span {
+    font-size: 1.5em;
+    top: 40%;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    z-index: 10;
+  }
+}
+@media (min-width: 768px) {
+  /* line 75, sass/page-templates/_homepage.scss */
+  .page-template-front-page #slider .flex-control-nav {
+    bottom: 10%;
+  }
+  /* line 77, sass/page-templates/_homepage.scss */
+  .page-template-front-page #slider .flex-control-nav li a {
+    width: 30px;
+    height: 30px;
+  }
+  /* line 83, sass/page-templates/_homepage.scss */
+  .page-template-front-page .highlight-box {
+    float: left;
+    width: 31.6666666%;
+    margin: 5px;
+  }
+  /* line 87, sass/page-templates/_homepage.scss */
+  .page-template-front-page .highlight-box span {
+    font-size: 1.6em;
+    top: 30%;
+  }
+}
+@media (min-width: 992px) {
+  /* line 96, sass/page-templates/_homepage.scss */
+  .page-template-front-page #slider .flex-control-nav li a {
+    width: 35px;
+    height: 35px;
+  }
+  /* line 102, sass/page-templates/_homepage.scss */
+  .page-template-front-page .highlight-box {
+    width: 31.222222%;
+    margin: 10px;
+  }
+  /* line 105, sass/page-templates/_homepage.scss */
+  .page-template-front-page .highlight-box span {
+    font-size: 2em;
+    top: 30%;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 113, sass/page-templates/_homepage.scss */
+  .page-template-front-page .highlight-box span {
+    font-size: 3em;
+    top: 30%;
+    left: 40%;
+    -webkit-transform: translateX(-30%);
+            transform: translateX(-30%);
+    z-index: 10;
+  }
 }
 
 /*--------------------------------------------------------------

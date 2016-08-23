@@ -13,6 +13,8 @@
         .entry-content {
             font-family: $font-cabin-regular;
             font-weight: 400;
+            max-width: 1000px;
+            margin: 0 auto;
         }
     }
 }

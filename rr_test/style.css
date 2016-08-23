@@ -452,6 +452,7 @@ hr {
 h1 {
   font-family: "TimesNewRomanPSMT";
   font-size: 3em;
+  margin: 0;
 }
 
 /* line 1, sass/elements/_lists.scss */
@@ -486,7 +487,7 @@ dd {
   margin: 0 1.5em 1.5em;
 }
 
-/* line 38, sass/elements/_elements.scss */
+/* line 39, sass/elements/_elements.scss */
 img {
   height: auto;
   /* Make sure images are scaled correctly. */
@@ -649,7 +650,7 @@ a:hover, a:active {
 .main-navigation .current-menu-item > a,
 .main-navigation .current_page_ancestor > a,
 .main-navigation .current-menu-ancestor > a {
-  color: #8F221D !important;
+  color: #be9d4d !important;
 }
 
 /* Small menu. */
@@ -1014,56 +1015,56 @@ object {
       -ms-flex-align: end;
           align-items: flex-end;
 }
-/* line 18, sass/page-templates/_header.scss */
+/* line 16, sass/page-templates/_header.scss */
 #masthead .flex-wrapper .flex-item {
   -webkit-box-flex: 1;
   -webkit-flex: 1 1 auto;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
 }
-/* line 21, sass/page-templates/_header.scss */
+/* line 19, sass/page-templates/_header.scss */
 #masthead .flex-wrapper .site-branding {
   width: 55%;
   max-width: 225px;
   padding: 20px;
 }
-/* line 26, sass/page-templates/_header.scss */
+/* line 24, sass/page-templates/_header.scss */
 #masthead .flex-wrapper .site-branding .custom-logo {
   display: block;
 }
-/* line 30, sass/page-templates/_header.scss */
+/* line 27, sass/page-templates/_header.scss */
 #masthead .flex-wrapper .site-branding .custom-logo-link {
   display: block;
   padding-bottom: 30px;
 }
-/* line 35, sass/page-templates/_header.scss */
+/* line 32, sass/page-templates/_header.scss */
 #masthead .flex-wrapper .phone-wrapper {
   text-align: right;
-  padding-right: 20px;
 }
-/* line 38, sass/page-templates/_header.scss */
+/* line 34, sass/page-templates/_header.scss */
 #masthead .flex-wrapper .phone-wrapper .masthead-tel {
   font-family: "TimesNewRomanPSMT";
   font-size: 1.3em;
   font-style: italic;
+  padding-right: 20px;
 }
-/* line 42, sass/page-templates/_header.scss */
+/* line 39, sass/page-templates/_header.scss */
 #masthead .flex-wrapper .phone-wrapper .masthead-tel a {
   color: #8F221D;
   text-decoration: none;
 }
-/* line 47, sass/page-templates/_header.scss */
+/* line 43, sass/page-templates/_header.scss */
 #masthead .flex-wrapper .phone-wrapper .masthead-tel span {
   font-family: "Cabin-Bold";
   font-style: normal;
   font-size: 1.4em;
 }
-/* line 53, sass/page-templates/_header.scss */
+/* line 49, sass/page-templates/_header.scss */
 #masthead .flex-wrapper .phone-wrapper .main-navigation li {
   padding: 20px;
   font-size: 1.3em;
 }
-/* line 56, sass/page-templates/_header.scss */
+/* line 52, sass/page-templates/_header.scss */
 #masthead .flex-wrapper .phone-wrapper .main-navigation li a {
   color: #7f7f7f;
 }
@@ -1093,9 +1094,20 @@ object {
 }
 /* line 18, sass/page-templates/_footer.scss */
 .site-footer .footer-equal-housing {
-  width: 55%;
-  text-align: right;
+  display: block;
+  width: 50%;
   float: right;
+  text-align: right;
+}
+/* line 23, sass/page-templates/_footer.scss */
+.site-footer .footer-equal-housing svg {
+  width: 60px;
+  float: right;
+  margin-left: 10px;
+}
+/* line 28, sass/page-templates/_footer.scss */
+.site-footer .footer-equal-housing .footer-disclaimer {
+  margin: 2px 70px 0 0;
 }
 
 /*--------------------------------------------------------------
@@ -1124,6 +1136,8 @@ object {
 #content .site-main .entry-content {
   font-family: "Cabin-Regular";
   font-weight: 400;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 /*--------------------------------------------------------------
@@ -1153,7 +1167,7 @@ object {
 }
 /* line 25, sass/page-templates/_homepage.scss */
 .page-template-front-page #slider .flex-control-nav .flex-active {
-  background: #daba75;
+  background: #be9d4d;
 }
 /* line 30, sass/page-templates/_homepage.scss */
 .page-template-front-page .entry-title {
@@ -1187,8 +1201,10 @@ object {
 .page-template-front-page .highlight-box img {
   display: block;
   opacity: .6;
+  width: 380px;
+  height: 213px;
 }
-/* line 56, sass/page-templates/_homepage.scss */
+/* line 58, sass/page-templates/_homepage.scss */
 .page-template-front-page .highlight-box span {
   color: #ffffff;
   font-size: 2.59em;
@@ -1208,8 +1224,12 @@ object {
 --------------------------------------------------------------*/
 /* line 4, sass/page-templates/_photo-gallery.scss */
 .page-template-page-photo-gallery-page #slider, .page-template-page-photo-gallery-page #thumbnail-slider {
-  margin: 0;
+  margin-bottom: 5px;
   border: none;
+}
+/* line 8, sass/page-templates/_photo-gallery.scss */
+.page-template-page-photo-gallery-page .flex-direction-nav {
+  display: none;
 }
 
 /*--------------------------------------------------------------
@@ -1221,8 +1241,8 @@ object {
     float: left;
     display: block;
     margin-right: 0.8403361345%;
-    width: 66.3865546218%;
-    padding: 0 40px;
+    width: 49.5798319328%;
+    margin-left: 8.4033613445%;
   }
   /* line 89, sass/grid/_span-columns.scss */
   .page-template-page-amenities-page #primary:last-child {
@@ -1243,13 +1263,19 @@ object {
   font-family: "Cabin-Bold";
   margin: 0;
 }
+/* line 18, sass/page-templates/_amenities-page.scss */
+.page-template-page-amenities-page #primary .entry-content p {
+  margin-top: 0;
+}
 @media screen and (min-width: 768px) {
-  /* line 21, sass/page-templates/_amenities-page.scss */
+  /* line 23, sass/page-templates/_amenities-page.scss */
   .page-template-page-amenities-page #secondary {
     float: left;
     display: block;
     margin-right: 0.8403361345%;
     width: 32.7731092437%;
+    margin-left: 8.4033613445%;
+    margin-right: 0;
     margin-top: 1em;
   }
   /* line 89, sass/grid/_span-columns.scss */

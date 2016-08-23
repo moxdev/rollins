@@ -9,12 +9,10 @@
         background-color: $red;
     }
     .flex-wrapper {
-        // padding: 20px;
         display:flex;
         flex-wrap: no-wrap;
         justify-content: space-between;
         align-items: flex-end;
-
         .flex-item {
             flex: 1 1 auto;
         }
@@ -26,7 +24,6 @@
             .custom-logo {
                 display: block;
             }
-
             .custom-logo-link {
                 display: block;
                 padding-bottom: 30px;
@@ -34,16 +31,15 @@
         }
         .phone-wrapper {
             text-align: right;
-            padding-right: 20px;
             .masthead-tel {
                 font-family:$font-times-regular;
                 font-size: 1.3em;
                 font-style: italic;
+                padding-right: 20px;
                 a {
                     color: $red;
                     text-decoration: none;
                 }
-
                 span {
                     font-family: $font-cabin-bold;
                     font-style: normal;

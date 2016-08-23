@@ -10,6 +10,7 @@
         animationLoop: false,
         slideshow: false,
         itemWidth: 210,
+        itemMargin: 5,
         asNavFor: "#slider"
     });
     $("#slider").flexslider({

@@ -1,8 +1,8 @@
 .page-template-page-amenities-page {
     #primary {
         @include media($tablet) {
-            @include span-columns(8);
-            padding: 0 40px;
+            @include span-columns(6);
+            @include shift(1);
         }
         .entry-header {
             text-align: left;
@@ -15,12 +15,16 @@
                 font-family: $font-cabin-bold;
                 margin: 0;
             }
+            p {
+                margin-top: 0;
+            }
         }
-
     }
     #secondary {
         @include media($tablet) {
             @include span-columns(4);
+            @include shift(1);
+            @include omega();
                 margin-top: 1em;
         }
     }

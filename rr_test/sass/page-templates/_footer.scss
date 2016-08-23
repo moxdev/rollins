@@ -16,8 +16,18 @@
         }
     }
     .footer-equal-housing {
-        width: 55%;
-        text-align: right;
+        display: block;
+        width: 50%;
         float: right;
+        text-align: right;
+        svg  {
+            width: 60px;
+            float: right;
+            margin-left: 10px;
+        }
+        .footer-disclaimer {
+            margin: 2px 70px 0 0;
+        }
+
     }
 }

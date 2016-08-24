@@ -1,31 +1,41 @@
 .page-template-page-amenities-page {
+    .site-main {
+        padding: 0 10px;
+    }
     #primary {
-        @include media($tablet) {
-            @include span-columns(6);
-            @include shift(1);
-        }
         .entry-header {
             text-align: left;
+            padding: 0 em(10);
         }
         .entry-content {
             text-align: left;
-
-            h2 {
-                color: $red;
-                font-family: $font-cabin-bold;
-                margin: 0;
-            }
             p {
-                margin-top: 0;
+                margin-bottom: em(10);
             }
+        }
+        @include media($laptop) {
+            @include span-columns(8);
         }
     }
     #secondary {
+        @include media($iphone) {
+            img {
+                padding: em(10);
+            }
+        }
         @include media($tablet) {
+            @include span-columns(12);
+                img {
+                    @include span-columns(6);
+                }
+        }
+        @include media($laptop) {
+            margin-top: 1em;
             @include span-columns(4);
-            @include shift(1);
-            @include omega();
-                margin-top: 1em;
+                img {
+                    @include span-columns(12);
+                    max-width: em(300);
+                }
         }
     }
 }

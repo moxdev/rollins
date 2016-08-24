@@ -1,11 +1,8 @@
-// iPhone, min-width: 315px
+// iphone, min-width: 315px
 // mobile, min-width: 480px
 // tablet, min-width: 768px
 // laptop, min-width: 992px
-// desktop, min-width: 1280px
-// large, min-width: 1690px
-// xlarge, min-width: 1990px
-// xxlarge, min-width: 2243px
+// desktop, min-width: 1200px
 
 @mixin respond-to($breakpoint) {
   @if $breakpoint == "iphone" {
@@ -34,24 +31,6 @@
 
   @else if $breakpoint == "desktop" {
     @media (min-width: 1200px) {
-      @content;
-    }
-  }
-
-  @else if $breakpoint == "large" {
-    @media (min-width: 1690px) {
-      @content;
-    }
-  }
-
-  @else if $breakpoint == "xlarge" {
-    @media (min-width: 1990px) {
-      @content;
-    }
-  }
-
-  @else if $breakpoint == "xxlarge" {
-    @media (min-width: 2243px) {
       @content;
     }
   }

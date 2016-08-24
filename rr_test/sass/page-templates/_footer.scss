@@ -1,36 +1,20 @@
 //  footer.scss
 .site-footer {
-    // height: auto;
     background-color: $red;
     color: $white;
-    // @include pad(em(20px) em(30px) em(50px) em(30px));
-    // font-size: .7em;
-    display: block;
-    // margin-top: 35px;
     .footer-address-section {
-        // width: 40%;
-        // text-align: left;
-        // float: left;
         .footer-phone {
             font-size: 1.5em;
         }
     }
     .footer-equal-housing {
         display: block;
-        // width: 50%;
-        // float: right;
-        // text-align: right;
         svg  {
-            width: 60px;
-            // float: right;
-            // margin-left: 10px;
-        }
-        .footer-disclaimer {
-            // margin: 2px 70px 0 0;
+            width: em(60);
         }
     }
     @include respond-to(iphone) {
-        padding: em(10px);
+        padding: 10px;
         font-size: .6em;
         .footer-address-section {
             text-align:center;
@@ -39,7 +23,7 @@
             text-align: center;
             svg {
                 display: block;
-                margin: em(10px) auto;
+                margin: 10px auto;
             }
             .footer-disclaimer {
                 display: block;
@@ -69,5 +53,9 @@
                 margin: 2px 70px 0 0;
             }
         }
+    }
+    @include respond-to(laptop) {
+        padding: 30px;
+        font-size: .8em;
     }
 }

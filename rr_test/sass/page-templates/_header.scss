@@ -1,5 +1,5 @@
 #masthead {
-    background-color: #fff;
+    background-color: $white;
     color: #000;
     &:after {
         content: '';
@@ -11,18 +11,12 @@
         display:flex;
         flex-wrap: no-wrap;
         justify-content: space-between;
-        align-items: flex-end;
+        align-items: center;
         .flex-item {
-            flex: 1 1 auto;
+            flex: 1 1 50%;
         }
         .site-branding {
-            max-width: 225px;
-            .custom-logo {
-                // display: block;
-            }
-            .custom-logo-link {
-                // display: block;
-            }
+            max-width: em(225);
         }
         .phone-wrapper {
             text-align: right;
@@ -35,6 +29,7 @@
                 }
                 span {
                     font-family: $font-cabin-bold;
+                    font-style: normal;
                 }
             }
             .main-navigation li {
@@ -48,13 +43,48 @@
     }
     @include respond-to(iphone) {
         .flex-wrapper {
-            padding: 10px;
-            margin-bottom: 10px;
+            padding: 0 em(10) em(10) em(10);
+            margin-bottom: em(10);
             .masthead-tel {
                 visibility: collapse;
-                padding-bottom: 10px;
+                padding-bottom: em(10);
                 span {
                     visibility: visible;
+                    font-size: 1.1em;
+                }
+            }
+        }
+    }
+    @include respond-to(mobile) {
+        #logo img {
+            padding-top: em(20);
+        }
+    }
+    @include respond-to(tablet) {
+        .flex-wrapper {
+            padding: em(20);
+            #logo img {
+                padding-top: 0;
+            }
+            .masthead-tel {
+                visibility: visible;
+                font-size: 1.3em;
+                span {
+                    font-size: 1.4em;
+                }
+            }
+        }
+    }
+    @include respond-to(desktop) {
+        .flex-wrapper {
+            padding: em(20) em(20) 0 em(20);
+            .phone-wrapper {
+                .main-navigation li {
+                    font-size: 1.5em;
+                }
+                .masthead-tel {
+                    padding-bottom: 0;
+                    font-size: 1.5em;
                 }
             }
         }

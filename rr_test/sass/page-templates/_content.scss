@@ -1,56 +1,64 @@
 // _content.scss
 #content {
     @include outer-container();
-
-    .site-main {
-        text-align: center;
-        .entry-content {
-            font-family: $font-cabin-regular;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        @include respond-to(iphone) {
-            @include pad(0 10px);
+    padding: 0 em(10);
+    text-align: center;
+    .entry-content {
+        font-family: $font-cabin-regular;
+        padding: 0 em(10);
+        margin: 0 auto;
+    }
+    @include respond-to(iphone) {
             h1 {
-                font-size: 1.5em;
+                font-size: 1.8em;
             }
-            .entry-content {
-                p {
-                    font-size: .9em;
-                }
-            }
-        }
-        @include respond-to(tablet) {
-            @include pad(0 10px);
-            h1 {
-                font-size: 2em;
+            h2 {
+                font-size: 1.15em;
             }
             .entry-content {
                 p {
                     font-size: 1em;
                 }
             }
+    }
+    @include respond-to(tablet) {
+        padding: 0 em(20);
+        h1 {
+            font-size: 2em;
         }
-        @include respond-to(laptop) {
-            @include pad(0 20px);
+        h2 {
+            font-size: 1.3em;
+        }
+        .entry-content {
+            p {
+                font-size: 1.1em;
+            }
+        }
+    }
+    @include respond-to(laptop) {
             h1 {
                 font-size: 2.5em;
+            }
+            h2 {
+                font-size: 1.5em;
             }
             .entry-content {
                 p {
                     font-size: 1.2em;
                 }
             }
-        }
-        @include respond-to(desktop) {
+    }
+    @include respond-to(desktop) {
             h1 {
-                font-size: 3em;
+                font-size: 2.8em;
+            }
+            h2 {
+                font-size: 1.8em;
             }
             .entry-content {
                 p {
                     font-size: 1.3em;
                 }
             }
-        }
     }
 }

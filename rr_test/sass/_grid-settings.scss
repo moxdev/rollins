@@ -1,22 +1,18 @@
-@import "bourbon/bourbon"; // or "bourbon" when in Rails
-@import "neat/neat-helpers"; // or "neat-helpers" when in Rails
+@import "bourbon/bourbon";
+@import "neat/neat-helpers";
 
 // Change the grid settings
 $column: em(90px);
 $gutter: em(10px);
 $grid-columns: 12;
-$max-width: em(1280px);
+$max-width: em(1200px);
 
-// Define your breakpoints
+// Breakpoints for neat span-col
+$iphone: 320px;
 $mobile: 480px;
 $tablet: 768px;
-$large: 1280px;
-// $xl-break-point-value: 3000;
-
-// $mobile: new-breakpoint(max-width em($mobile-breakpoint-value - 1) 2);
-// $tablet: new-breakpoint(min-width em($mobile-breakpoint-value) max-width em($tablet-breakpoint-value) 4);
-// $large-screen: new-breakpoint(min-width em($large-breakpoint-value));
-// $xl-screen: new-breakpoint(max-width 3000px 12);
+$laptop: 992px;
+$large: 1200px;
 
 // Visual Grid
 $visual-grid: false;

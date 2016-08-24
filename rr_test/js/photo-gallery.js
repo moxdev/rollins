@@ -11,6 +11,8 @@
         slideshow: false,
         itemWidth: 210,
         itemMargin: 5,
+        maxItems: 5,
+        minItems: 2,
         asNavFor: "#slider"
     });
     $("#slider").flexslider({

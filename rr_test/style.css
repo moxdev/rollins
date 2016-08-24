@@ -415,9 +415,11 @@ big {
 /* line 1, sass/elements/_elements.scss */
 html {
   box-sizing: border-box;
+  width: 100%;
+  height: 100%;
 }
 
-/* line 5, sass/elements/_elements.scss */
+/* line 7, sass/elements/_elements.scss */
 *,
 *:before,
 *:after {
@@ -425,22 +427,22 @@ html {
   box-sizing: inherit;
 }
 
-/* line 11, sass/elements/_elements.scss */
+/* line 13, sass/elements/_elements.scss */
 body {
   background: #fff;
   /* Fallback for when there is no custom background color defined. */
 }
 
-/* line 15, sass/elements/_elements.scss */
+/* line 17, sass/elements/_elements.scss */
 blockquote, q {
   quotes: "" "";
 }
-/* line 18, sass/elements/_elements.scss */
+/* line 20, sass/elements/_elements.scss */
 blockquote:before, blockquote:after, q:before, q:after {
   content: "";
 }
 
-/* line 24, sass/elements/_elements.scss */
+/* line 26, sass/elements/_elements.scss */
 hr {
   background-color: #ccc;
   border: 0;
@@ -448,11 +450,21 @@ hr {
   margin-bottom: 1.5em;
 }
 
-/* line 31, sass/elements/_elements.scss */
-h1 {
-  font-family: "TimesNewRomanPSMT";
+/* line 33, sass/elements/_elements.scss */
+h1, h2 {
   color: #8F221D;
   margin: 0;
+}
+
+/* line 37, sass/elements/_elements.scss */
+h1 {
+  font-family: "TimesNewRomanPSMT";
+}
+
+/* line 40, sass/elements/_elements.scss */
+h2 {
+  font-family: "Cabin-Bold";
+  font-weight: 400;
 }
 
 /* line 1, sass/elements/_lists.scss */
@@ -487,7 +499,7 @@ dd {
   margin: 0 1.5em 1.5em;
 }
 
-/* line 39, sass/elements/_elements.scss */
+/* line 47, sass/elements/_elements.scss */
 img {
   height: auto;
   /* Make sure images are scaled correctly. */
@@ -987,7 +999,7 @@ object {
 --------------------------------------------------------------*/
 /* line 1, sass/page-templates/_header.scss */
 #masthead {
-  background-color: #fff;
+  background-color: #ffffff;
   color: #000;
 }
 /* line 4, sass/page-templates/_header.scss */
@@ -1010,63 +1022,105 @@ object {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: end;
-  -webkit-align-items: flex-end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /* line 15, sass/page-templates/_header.scss */
 #masthead .flex-wrapper .flex-item {
   -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  -webkit-flex: 1 1 50%;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
 }
 /* line 18, sass/page-templates/_header.scss */
 #masthead .flex-wrapper .site-branding {
-  max-width: 225px;
+  max-width: 14.0625em;
 }
-/* line 27, sass/page-templates/_header.scss */
+/* line 21, sass/page-templates/_header.scss */
 #masthead .flex-wrapper .phone-wrapper {
   text-align: right;
 }
-/* line 29, sass/page-templates/_header.scss */
+/* line 23, sass/page-templates/_header.scss */
 #masthead .flex-wrapper .phone-wrapper .masthead-tel {
   font-family: "TimesNewRomanPSMT";
   font-style: italic;
 }
-/* line 32, sass/page-templates/_header.scss */
+/* line 26, sass/page-templates/_header.scss */
 #masthead .flex-wrapper .phone-wrapper .masthead-tel a {
   color: #8F221D;
   text-decoration: none;
 }
-/* line 36, sass/page-templates/_header.scss */
+/* line 30, sass/page-templates/_header.scss */
 #masthead .flex-wrapper .phone-wrapper .masthead-tel span {
   font-family: "Cabin-Bold";
+  font-style: normal;
 }
-/* line 40, sass/page-templates/_header.scss */
+/* line 35, sass/page-templates/_header.scss */
 #masthead .flex-wrapper .phone-wrapper .main-navigation li {
   padding: 20px;
   font-size: 1.3em;
 }
-/* line 43, sass/page-templates/_header.scss */
+/* line 38, sass/page-templates/_header.scss */
 #masthead .flex-wrapper .phone-wrapper .main-navigation li a {
   color: #7f7f7f;
 }
 @media (min-width: 315px) {
-  /* line 50, sass/page-templates/_header.scss */
+  /* line 45, sass/page-templates/_header.scss */
   #masthead .flex-wrapper {
-    padding: 10px;
-    margin-bottom: 10px;
+    padding: 0 0.625em 0.625em 0.625em;
+    margin-bottom: 0.625em;
   }
-  /* line 53, sass/page-templates/_header.scss */
+  /* line 48, sass/page-templates/_header.scss */
   #masthead .flex-wrapper .masthead-tel {
     visibility: collapse;
-    padding-bottom: 10px;
+    padding-bottom: 0.625em;
   }
-  /* line 56, sass/page-templates/_header.scss */
+  /* line 51, sass/page-templates/_header.scss */
   #masthead .flex-wrapper .masthead-tel span {
     visibility: visible;
+    font-size: 1.1em;
+  }
+}
+@media (min-width: 480px) {
+  /* line 59, sass/page-templates/_header.scss */
+  #masthead #logo img {
+    padding-top: 1.25em;
+  }
+}
+@media (min-width: 768px) {
+  /* line 64, sass/page-templates/_header.scss */
+  #masthead .flex-wrapper {
+    padding: 1.25em;
+  }
+  /* line 66, sass/page-templates/_header.scss */
+  #masthead .flex-wrapper #logo img {
+    padding-top: 0;
+  }
+  /* line 69, sass/page-templates/_header.scss */
+  #masthead .flex-wrapper .masthead-tel {
+    visibility: visible;
+    font-size: 1.3em;
+  }
+  /* line 72, sass/page-templates/_header.scss */
+  #masthead .flex-wrapper .masthead-tel span {
+    font-size: 1.4em;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 79, sass/page-templates/_header.scss */
+  #masthead .flex-wrapper {
+    padding: 1.25em 1.25em 0 1.25em;
+  }
+  /* line 82, sass/page-templates/_header.scss */
+  #masthead .flex-wrapper .phone-wrapper .main-navigation li {
+    font-size: 1.5em;
+  }
+  /* line 85, sass/page-templates/_header.scss */
+  #masthead .flex-wrapper .phone-wrapper .masthead-tel {
+    padding-bottom: 0;
+    font-size: 1.5em;
   }
 }
 
@@ -1077,40 +1131,39 @@ object {
 .site-footer {
   background-color: #8F221D;
   color: #ffffff;
-  display: block;
 }
-/* line 14, sass/page-templates/_footer.scss */
+/* line 6, sass/page-templates/_footer.scss */
 .site-footer .footer-address-section .footer-phone {
   font-size: 1.5em;
 }
-/* line 18, sass/page-templates/_footer.scss */
+/* line 10, sass/page-templates/_footer.scss */
 .site-footer .footer-equal-housing {
   display: block;
 }
-/* line 23, sass/page-templates/_footer.scss */
+/* line 12, sass/page-templates/_footer.scss */
 .site-footer .footer-equal-housing svg {
-  width: 60px;
+  width: 3.75em;
 }
 @media (min-width: 315px) {
   /* line 2, sass/page-templates/_footer.scss */
   .site-footer {
-    padding: 0.625em;
+    padding: 10px;
     font-size: .6em;
   }
-  /* line 35, sass/page-templates/_footer.scss */
+  /* line 19, sass/page-templates/_footer.scss */
   .site-footer .footer-address-section {
     text-align: center;
   }
-  /* line 38, sass/page-templates/_footer.scss */
+  /* line 22, sass/page-templates/_footer.scss */
   .site-footer .footer-equal-housing {
     text-align: center;
   }
-  /* line 40, sass/page-templates/_footer.scss */
+  /* line 24, sass/page-templates/_footer.scss */
   .site-footer .footer-equal-housing svg {
     display: block;
-    margin: 0.625em auto;
+    margin: 10px auto;
   }
-  /* line 44, sass/page-templates/_footer.scss */
+  /* line 28, sass/page-templates/_footer.scss */
   .site-footer .footer-equal-housing .footer-disclaimer {
     display: block;
   }
@@ -1121,29 +1174,36 @@ object {
     margin-top: 1.875em;
     font-size: .7em;
   }
-  /* line 52, sass/page-templates/_footer.scss */
+  /* line 36, sass/page-templates/_footer.scss */
   .site-footer .footer-address-section {
     width: 40%;
     padding-right: 50px;
     text-align: left;
     float: left;
   }
-  /* line 58, sass/page-templates/_footer.scss */
+  /* line 42, sass/page-templates/_footer.scss */
   .site-footer .footer-equal-housing {
     display: block;
     width: 60%;
     float: right;
     text-align: right;
   }
-  /* line 63, sass/page-templates/_footer.scss */
+  /* line 47, sass/page-templates/_footer.scss */
   .site-footer .footer-equal-housing svg {
     width: 60px;
     float: right;
     margin-left: 10px;
   }
-  /* line 68, sass/page-templates/_footer.scss */
+  /* line 52, sass/page-templates/_footer.scss */
   .site-footer .footer-equal-housing .footer-disclaimer {
     margin: 2px 70px 0 0;
+  }
+}
+@media (min-width: 992px) {
+  /* line 2, sass/page-templates/_footer.scss */
+  .site-footer {
+    padding: 30px;
+    font-size: .8em;
   }
 }
 
@@ -1155,69 +1215,75 @@ object {
   content: "";
   display: table;
   table-layout: fixed;
-  max-width: 80em;
+  max-width: 75em;
   margin-left: auto;
   margin-right: auto;
-}
-/* line 5, sass/page-templates/_content.scss */
-#content .site-main {
+  padding: 0 0.625em;
   text-align: center;
 }
-/* line 7, sass/page-templates/_content.scss */
-#content .site-main .entry-content {
+/* line 6, sass/page-templates/_content.scss */
+#content .entry-content {
   font-family: "Cabin-Regular";
-  max-width: 1200px;
+  padding: 0 0.625em;
   margin: 0 auto;
 }
 @media (min-width: 315px) {
-  /* line 5, sass/page-templates/_content.scss */
-  #content .site-main {
-    padding: 0 10px;
+  /* line 12, sass/page-templates/_content.scss */
+  #content h1 {
+    font-size: 1.8em;
   }
-  /* line 14, sass/page-templates/_content.scss */
-  #content .site-main h1 {
-    font-size: 1.5em;
+  /* line 15, sass/page-templates/_content.scss */
+  #content h2 {
+    font-size: 1.15em;
   }
-  /* line 18, sass/page-templates/_content.scss */
-  #content .site-main .entry-content p {
-    font-size: .9em;
-  }
-}
-@media (min-width: 768px) {
-  /* line 5, sass/page-templates/_content.scss */
-  #content .site-main {
-    padding: 0 10px;
-  }
-  /* line 25, sass/page-templates/_content.scss */
-  #content .site-main h1 {
-    font-size: 2em;
-  }
-  /* line 29, sass/page-templates/_content.scss */
-  #content .site-main .entry-content p {
+  /* line 19, sass/page-templates/_content.scss */
+  #content .entry-content p {
     font-size: 1em;
   }
 }
-@media (min-width: 992px) {
-  /* line 5, sass/page-templates/_content.scss */
-  #content .site-main {
-    padding: 0 20px;
+@media (min-width: 768px) {
+  /* line 2, sass/page-templates/_content.scss */
+  #content {
+    padding: 0 1.25em;
   }
-  /* line 36, sass/page-templates/_content.scss */
-  #content .site-main h1 {
+  /* line 26, sass/page-templates/_content.scss */
+  #content h1 {
+    font-size: 2em;
+  }
+  /* line 29, sass/page-templates/_content.scss */
+  #content h2 {
+    font-size: 1.3em;
+  }
+  /* line 33, sass/page-templates/_content.scss */
+  #content .entry-content p {
+    font-size: 1.1em;
+  }
+}
+@media (min-width: 992px) {
+  /* line 39, sass/page-templates/_content.scss */
+  #content h1 {
     font-size: 2.5em;
   }
-  /* line 40, sass/page-templates/_content.scss */
-  #content .site-main .entry-content p {
+  /* line 42, sass/page-templates/_content.scss */
+  #content h2 {
+    font-size: 1.5em;
+  }
+  /* line 46, sass/page-templates/_content.scss */
+  #content .entry-content p {
     font-size: 1.2em;
   }
 }
 @media (min-width: 1200px) {
-  /* line 46, sass/page-templates/_content.scss */
-  #content .site-main h1 {
-    font-size: 3em;
+  /* line 52, sass/page-templates/_content.scss */
+  #content h1 {
+    font-size: 2.8em;
   }
-  /* line 50, sass/page-templates/_content.scss */
-  #content .site-main .entry-content p {
+  /* line 55, sass/page-templates/_content.scss */
+  #content h2 {
+    font-size: 1.8em;
+  }
+  /* line 59, sass/page-templates/_content.scss */
+  #content .entry-content p {
     font-size: 1.3em;
   }
 }
@@ -1244,38 +1310,38 @@ object {
   text-indent: -9999px;
   border-radius: 0;
 }
-/* line 19, sass/page-templates/_homepage.scss */
+/* line 17, sass/page-templates/_homepage.scss */
 .page-template-front-page #slider .flex-control-nav .flex-active {
   background: #be9d4d;
 }
-/* line 24, sass/page-templates/_homepage.scss */
+/* line 22, sass/page-templates/_homepage.scss */
 .page-template-front-page .entry-title {
   display: none;
 }
-/* line 27, sass/page-templates/_homepage.scss */
+/* line 25, sass/page-templates/_homepage.scss */
 .page-template-front-page .entry-content {
   text-align: center;
 }
-/* line 29, sass/page-templates/_homepage.scss */
+/* line 27, sass/page-templates/_homepage.scss */
 .page-template-front-page .entry-content h1 {
   font-family: "TimesNewRomanPSMT";
 }
-/* line 32, sass/page-templates/_homepage.scss */
+/* line 30, sass/page-templates/_homepage.scss */
 .page-template-front-page .entry-content p {
   font-family: "Cabin-Regular";
 }
-/* line 36, sass/page-templates/_homepage.scss */
+/* line 34, sass/page-templates/_homepage.scss */
 .page-template-front-page .highlight-box {
   background-color: #000000;
   text-align: center;
   position: relative;
 }
-/* line 40, sass/page-templates/_homepage.scss */
+/* line 38, sass/page-templates/_homepage.scss */
 .page-template-front-page .highlight-box img {
   display: block;
   opacity: .6;
 }
-/* line 44, sass/page-templates/_homepage.scss */
+/* line 42, sass/page-templates/_homepage.scss */
 .page-template-front-page .highlight-box span {
   color: #ffffff;
   font-family: "TimesNewRomanPSMT";
@@ -1283,23 +1349,23 @@ object {
   display: block;
 }
 @media (min-width: 315px) {
-  /* line 53, sass/page-templates/_homepage.scss */
+  /* line 51, sass/page-templates/_homepage.scss */
   .page-template-front-page #slider .flex-control-nav {
     bottom: 20%;
   }
-  /* line 55, sass/page-templates/_homepage.scss */
+  /* line 53, sass/page-templates/_homepage.scss */
   .page-template-front-page #slider .flex-control-nav li a {
-    width: 20px;
-    height: 20px;
+    width: 1.25em;
+    height: 1.25em;
   }
-  /* line 61, sass/page-templates/_homepage.scss */
+  /* line 59, sass/page-templates/_homepage.scss */
   .page-template-front-page .highlight-box {
     margin: 10px 0;
   }
-  /* line 63, sass/page-templates/_homepage.scss */
+  /* line 61, sass/page-templates/_homepage.scss */
   .page-template-front-page .highlight-box span {
-    font-size: 1.5em;
-    top: 40%;
+    font-size: 2em;
+    top: 30%;
     position: absolute;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -1307,54 +1373,60 @@ object {
     z-index: 10;
   }
 }
+@media (min-width: 480px) {
+  /* line 73, sass/page-templates/_homepage.scss */
+  .page-template-front-page .highlight-box span {
+    top: 30%;
+    font-size: 3em;
+  }
+}
 @media (min-width: 768px) {
-  /* line 75, sass/page-templates/_homepage.scss */
+  /* line 81, sass/page-templates/_homepage.scss */
   .page-template-front-page #slider .flex-control-nav {
     bottom: 10%;
   }
-  /* line 77, sass/page-templates/_homepage.scss */
-  .page-template-front-page #slider .flex-control-nav li a {
-    width: 30px;
-    height: 30px;
-  }
   /* line 83, sass/page-templates/_homepage.scss */
+  .page-template-front-page #slider .flex-control-nav li a {
+    width: 1.875em;
+    height: 1.875em;
+  }
+  /* line 89, sass/page-templates/_homepage.scss */
   .page-template-front-page .highlight-box {
     float: left;
     width: 31.6666666%;
     margin: 5px;
   }
-  /* line 87, sass/page-templates/_homepage.scss */
+  /* line 93, sass/page-templates/_homepage.scss */
   .page-template-front-page .highlight-box span {
     font-size: 1.6em;
     top: 30%;
   }
 }
 @media (min-width: 992px) {
-  /* line 96, sass/page-templates/_homepage.scss */
-  .page-template-front-page #slider .flex-control-nav li a {
-    width: 35px;
-    height: 35px;
-  }
   /* line 102, sass/page-templates/_homepage.scss */
+  .page-template-front-page #slider .flex-control-nav li a {
+    width: 2.1875em;
+    height: 2.1875em;
+  }
+  /* line 108, sass/page-templates/_homepage.scss */
   .page-template-front-page .highlight-box {
     width: 31.222222%;
-    margin: 10px;
+    margin: 0.625em;
   }
-  /* line 105, sass/page-templates/_homepage.scss */
+  /* line 111, sass/page-templates/_homepage.scss */
   .page-template-front-page .highlight-box span {
     font-size: 2em;
     top: 30%;
   }
 }
 @media (min-width: 1200px) {
-  /* line 113, sass/page-templates/_homepage.scss */
+  /* line 119, sass/page-templates/_homepage.scss */
   .page-template-front-page .highlight-box span {
     font-size: 3em;
     top: 30%;
-    left: 40%;
-    -webkit-transform: translateX(-30%);
-            transform: translateX(-30%);
-    z-index: 10;
+    left: 30%;
+    -webkit-transform: translateX(-20%);
+            transform: translateX(-20%);
   }
 }
 
@@ -1363,7 +1435,7 @@ object {
 --------------------------------------------------------------*/
 /* line 4, sass/page-templates/_photo-gallery.scss */
 .page-template-page-photo-gallery-page #slider, .page-template-page-photo-gallery-page #thumbnail-slider {
-  margin-bottom: 5px;
+  margin-bottom: 0.3125em;
   border: none;
 }
 /* line 8, sass/page-templates/_photo-gallery.scss */
@@ -1374,57 +1446,91 @@ object {
 /*--------------------------------------------------------------
 ## Amenities Page
 --------------------------------------------------------------*/
-@media screen and (min-width: 768px) {
-  /* line 2, sass/page-templates/_amenities-page.scss */
+/* line 2, sass/page-templates/_amenities-page.scss */
+.page-template-page-amenities-page .site-main {
+  padding: 0 10px;
+}
+/* line 6, sass/page-templates/_amenities-page.scss */
+.page-template-page-amenities-page #primary .entry-header {
+  text-align: left;
+  padding: 0 0.625em;
+}
+/* line 10, sass/page-templates/_amenities-page.scss */
+.page-template-page-amenities-page #primary .entry-content {
+  text-align: left;
+}
+/* line 12, sass/page-templates/_amenities-page.scss */
+.page-template-page-amenities-page #primary .entry-content p {
+  margin-bottom: 0.625em;
+}
+@media screen and (min-width: 992px) {
+  /* line 5, sass/page-templates/_amenities-page.scss */
   .page-template-page-amenities-page #primary {
     float: left;
     display: block;
     margin-right: 0.8403361345%;
-    width: 49.5798319328%;
-    margin-left: 8.4033613445%;
+    width: 66.3865546218%;
   }
   /* line 89, sass/grid/_span-columns.scss */
   .page-template-page-amenities-page #primary:last-child {
     margin-right: 0;
   }
 }
-/* line 7, sass/page-templates/_amenities-page.scss */
-.page-template-page-amenities-page #primary .entry-header {
-  text-align: left;
-}
-/* line 10, sass/page-templates/_amenities-page.scss */
-.page-template-page-amenities-page #primary .entry-content {
-  text-align: left;
-}
-/* line 13, sass/page-templates/_amenities-page.scss */
-.page-template-page-amenities-page #primary .entry-content h2 {
-  color: #8F221D;
-  font-family: "Cabin-Bold";
-  margin: 0;
-}
-/* line 18, sass/page-templates/_amenities-page.scss */
-.page-template-page-amenities-page #primary .entry-content p {
-  margin-top: 0;
+@media screen and (min-width: 320px) {
+  /* line 22, sass/page-templates/_amenities-page.scss */
+  .page-template-page-amenities-page #secondary img {
+    padding: 0.625em;
+  }
 }
 @media screen and (min-width: 768px) {
-  /* line 23, sass/page-templates/_amenities-page.scss */
+  /* line 20, sass/page-templates/_amenities-page.scss */
   .page-template-page-amenities-page #secondary {
     float: left;
     display: block;
     margin-right: 0.8403361345%;
-    width: 32.7731092437%;
-    margin-left: 8.4033613445%;
-    margin-right: 0;
-    margin-top: 1em;
+    width: 100%;
   }
   /* line 89, sass/grid/_span-columns.scss */
   .page-template-page-amenities-page #secondary:last-child {
     margin-right: 0;
   }
+  /* line 28, sass/page-templates/_amenities-page.scss */
+  .page-template-page-amenities-page #secondary img {
+    float: left;
+    display: block;
+    margin-right: 0.8403361345%;
+    width: 49.5798319328%;
+  }
+  /* line 89, sass/grid/_span-columns.scss */
+  .page-template-page-amenities-page #secondary img:last-child {
+    margin-right: 0;
+  }
 }
-
-/*--------------------------------------------------------------
-## Contact Page
---------------------------------------------------------------*/
+@media screen and (min-width: 992px) {
+  /* line 20, sass/page-templates/_amenities-page.scss */
+  .page-template-page-amenities-page #secondary {
+    margin-top: 1em;
+    float: left;
+    display: block;
+    margin-right: 0.8403361345%;
+    width: 32.7731092437%;
+  }
+  /* line 89, sass/grid/_span-columns.scss */
+  .page-template-page-amenities-page #secondary:last-child {
+    margin-right: 0;
+  }
+  /* line 35, sass/page-templates/_amenities-page.scss */
+  .page-template-page-amenities-page #secondary img {
+    float: left;
+    display: block;
+    margin-right: 0.8403361345%;
+    width: 100%;
+    max-width: 18.75em;
+  }
+  /* line 89, sass/grid/_span-columns.scss */
+  .page-template-page-amenities-page #secondary img:last-child {
+    margin-right: 0;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

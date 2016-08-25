@@ -40,7 +40,7 @@
 				?>
 				<nav id="site-navigation" class="main-navigation flex-item" role="navigation">
 
-					<button id="mobile-toggle" class="menu-toggle flex-item" aria-controls="mobile-menu" aria-expanded="false"><?php esc_html_e( '', 'rr_test' ); ?><span class="hamburger-icon"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/hamburger.png" alt=""></span></button>
+					<button id="mobile-toggle" class="menu-toggle flex-item" aria-controls="mobile-menu" aria-expanded="false"><?php esc_html_e( '', 'rr_test' ); ?></button>
 
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation flex-item-->

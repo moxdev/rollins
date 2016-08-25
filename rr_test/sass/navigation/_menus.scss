@@ -35,14 +35,18 @@
 
 // Mobile Navigation
 .menu-toggle {
+	background: url(images/sprites.png) no-repeat;
 	background-color: $red;
+	width: em(45);
+	height: em(45);
+	background-position: 7px 6px;
 	border: none;
 	border-radius: 0;
 	color: $white;
 	position: relative;
 	z-index: 99999;
-
 }
+
 .main-navigation.toggled ul {
 	display: block;
 }

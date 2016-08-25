@@ -937,7 +937,11 @@ a:hover, a:active {
 
 /* line 37, sass/navigation/_menus.scss */
 .menu-toggle {
+  background: url(images/sprites.png) no-repeat;
   background-color: #8F221D;
+  width: 2.8125em;
+  height: 2.8125em;
+  background-position: 7px 6px;
   border: none;
   border-radius: 0;
   color: #ffffff;
@@ -945,37 +949,37 @@ a:hover, a:active {
   z-index: 99999;
 }
 
-/* line 46, sass/navigation/_menus.scss */
+/* line 50, sass/navigation/_menus.scss */
 .main-navigation.toggled ul {
   display: block;
 }
 
 @media (min-width: 1200px) {
-  /* line 51, sass/navigation/_menus.scss */
+  /* line 55, sass/navigation/_menus.scss */
   .menu-toggle {
     display: none;
   }
 
-  /* line 54, sass/navigation/_menus.scss */
+  /* line 58, sass/navigation/_menus.scss */
   .main-navigation ul {
     display: block;
   }
 }
-/* line 63, sass/navigation/_menus.scss */
+/* line 67, sass/navigation/_menus.scss */
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden;
 }
-/* line 68, sass/navigation/_menus.scss */
+/* line 72, sass/navigation/_menus.scss */
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
   float: left;
   width: 50%;
 }
-/* line 73, sass/navigation/_menus.scss */
+/* line 77, sass/navigation/_menus.scss */
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {

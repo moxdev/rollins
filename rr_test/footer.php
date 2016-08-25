@@ -18,6 +18,9 @@
             rr_test_footer_colophon();
         } ?>
 	</footer><!-- #colophon -->
+    <nav id="site-navigation-mobile" class="mobile-navigation">
+        <?php wp_nav_menu( array( 'theme_location' => 'footer', 'menu_id' => 'mobile-menu', 'container' => '' ) ); ?>
+    </nav><!-- #site-navigation-mobile -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

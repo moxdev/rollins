@@ -1,5 +1,7 @@
 //  footer.scss
+// Use PX due to font size changes ratio will not match
 .site-footer {
+    margin-top: 30px;
     background-color: $red;
     color: $white;
     .footer-address-section {
@@ -10,7 +12,7 @@
     .footer-equal-housing {
         display: block;
         svg  {
-            width: em(60);
+            width: 60px;
         }
     }
     @include respond-to(iphone) {
@@ -31,7 +33,7 @@
         }
     }
     @include respond-to(tablet) {
-        margin-top: em(30px);
+        padding: 30px;
         font-size: .7em;
         .footer-address-section {
             width: 40%;
@@ -40,12 +42,10 @@
             float: left;
         }
         .footer-equal-housing {
-            display: block;
             width: 60%;
             float: right;
             text-align: right;
             svg  {
-                width: 60px;
                 float: right;
                 margin-left: 10px;
             }
@@ -55,7 +55,6 @@
         }
     }
     @include respond-to(laptop) {
-        padding: 30px;
         font-size: .8em;
     }
 }

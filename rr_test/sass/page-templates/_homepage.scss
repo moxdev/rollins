@@ -3,33 +3,12 @@
 		border: none;
 		padding: 0;
 		margin: 0;
-		// Flexslider
 		.flex-control-nav {
-			z-index: 999;
-			li a {
-			  display: block;
-			  border: 2px solid $white;
-			  background: $red;
-			  cursor: pointer;
-			  text-indent: -9999px;
-			  border-radius: 0;
-			}
-			.flex-active {
-				background: $yellow;
-			}
+			display: none;
 		}
 	}
 	.entry-title {
 		display: none;
-	}
-	.entry-content {
-		text-align: center;
-		h1 {
-			font-family: $font-times-regular;
-		}
-		p {
-			font-family: $font-cabin-regular;
-		}
 	}
 	.highlight-box {
 	  background-color: $black;
@@ -44,23 +23,14 @@
 		 font-family: $font-times-regular;
 		 line-height: 1;
 		 display: block;
+		 top: 30%;
 	  }
 	}
 	@include respond-to(iphone) {
-	  #slider {
-		.flex-control-nav {
-		  bottom: 20%;
-		  li a {
-			width: em(20);
-			height: em(20);
-		  }
-		}
-	  }
 	  .highlight-box {
 		margin: 10px 0;
 		span {
 		  font-size: 2em;
-		  top: 30%;
 		  position: absolute;
 		  left: 50%;
 		  transform: translateX(-50%);
@@ -71,54 +41,53 @@
 	@include respond-to(mobile) {
 		.highlight-box {
 			span {
-				top: 30%;
 				font-size: 3em;
 			}
 		}
 	}
 	@include respond-to(tablet) {
-	  #slider {
-		.flex-control-nav {
-		  bottom: 10%;
-		  li a {
-			width: em(30);
-			height: em(30);
-		  }
-		}
-	  }
 	  .highlight-box {
 		float: left;
 		width: 31.6666666%;
-		margin: 5px;
+		margin: em(5);
 		span {
 		  font-size: 1.6em;
-		  top: 30%;
 		}
 	  }
 	}
 	@include respond-to(laptop) {
-	  #slider {
-		.flex-control-nav {
-		  li a {
-			width: em(35);
-			height: em(35);
-		  }
-		}
-	  }
 	  .highlight-box {
 		width: 31.222222%;
 		margin: em(10);
 		span {
 		  font-size: 2em;
-		  top: 30%;
 		}
 	  }
 	}
 	@include respond-to(desktop) {
+		#slider {
+			.flex-control-nav {
+				display: block;
+				z-index: 999;
+				bottom: 10%;
+				li a {
+				  display: block;
+				  width: em(35);
+				  height: em(35);
+				  border: 2px solid $white;
+				  background: $red;
+				  cursor: pointer;
+				  text-indent: -9999px;
+				  border-radius: 0;
+				}
+				.flex-active {
+					background: $yellow;
+				}
+			}
+		}
 	  .highlight-box {
 		span {
 		  font-size: 3em;
-		  top: 30%;
 		  left: 30%;
 		  transform: translateX(-20%);
 		}

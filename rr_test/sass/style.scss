@@ -23,13 +23,14 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
+# Bourbon / Neat Settings
 # Normalize
 # Typography
+    ## Fonts
+    ## Headings
+    ## Copy
 # Elements
 # Forms
-# Navigation
-	## Links
-	## Menus
 # Accessibility
 # Alignments
 # Clearings
@@ -43,6 +44,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Galleries
 # Layout
     ## Header
+        ### Links
+        ### Menus
+        ### Mobile Navigation
+        ### Masthead
     ## Footer
     ## Content
     ## Home Page
@@ -50,6 +55,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     ## Amenities Page
     ## Contact Page
 
+/*--------------------------------------------------------------
+# Bourbon / Neat Settings
 --------------------------------------------------------------*/
 @import "bourbon";
 @import "grid-settings";
@@ -76,11 +83,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Forms
 --------------------------------------------------------------*/
 @import "forms/forms";
-
-/*--------------------------------------------------------------
-# Navigation
---------------------------------------------------------------*/
-@import "navigation/navigation";
 
 /*--------------------------------------------------------------
 # Accessibility

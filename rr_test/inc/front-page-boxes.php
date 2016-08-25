@@ -32,8 +32,8 @@ function rr_test_front_page_boxes() {
                             if( $url ): ?>
                                 </a>
                             <?php endif; ?>
-                        </div><!-- highlight-box -->
-                    </div><!-- highlight-inner -->
+                        </div><!-- highlight-inner-->
+                    </div><!-- highlight-box -->
             <?php endwhile; ?>
         </div>
     <?php endif;
